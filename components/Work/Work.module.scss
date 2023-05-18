@@ -11,6 +11,7 @@
             font-size: 45px;
             line-height: 50px;
             color: #0D1D4A;
+            padding: 50px;
         }
     }
     .imagesTitle {
@@ -18,7 +19,7 @@
         .images {
             position: relative; 
             width: 100%;
-            height: 166px;
+            height: 170px;
             .arrowImg {
                 z-index: -1;
                 position: absolute;
@@ -50,6 +51,7 @@
                 line-height: 26px;
                 text-align: center;
                 color: #0D1D4A;
+                padding: 40px 0;
             }
         }
     }

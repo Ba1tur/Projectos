@@ -1,4 +1,152 @@
 .coursework {
-    height: 100vh;
-    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    .courseTitle {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 50px;
+        text-align: center;
+        color: #0D1D4A;
+        padding: 68px 0;
+        span {
+            color: #7D2AEB;
+        }
+    }
+    .courseCards {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .cards {
+            padding: 20px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 15px rgba(13, 29, 74, 0.11);
+            border-radius: 15px;
+            .titles {
+                .subTitle {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 0.416667px;
+                    text-transform: uppercase;
+                    color: #93A1C8;
+                }
+                .title {
+                    font-style: normal;
+                    max-width: 330px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 26px;
+                    padding: 14px 0;
+                    color: #0D1D4A;
+                }
+                .subSmTitle {
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #93A1C8;
+                    background: #F1F4F9;
+                    border-radius: 14px;
+                    padding: 6px;
+                }
+            }
+        }
+        .generalInfo {
+            display: flex;
+            justify-content: space-between;
+            .conditions {
+                display: flex;
+                flex-direction: column;
+                .unique {
+                    display: flex;
+                    align-items: center;
+                    .subTitles {
+                        font-style: normal;
+                        font-weight: 350;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #93A1C8;
+                    }
+                    p {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #0D1D4A;
+                    }
+                }
+                .calendar {
+                    display: flex;
+                    align-items: center;
+                    .calendarTitle {
+                        .calendarSmTitle {
+                            font-style: normal;
+                            font-weight: 350;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #93A1C8;
+                        }
+                        p {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #0D1D4A;
+                        }
+                    }
+                }
+            }
+            .authorPrice {
+            .author {
+                display: flex;
+                align-items: center;
+                .name {
+                    .role {
+                        font-style: normal;
+                        font-weight: 350;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #93A1C8;
+                    }
+                    p {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #0D1D4A;
+                    }
+                }
+            } 
+             .price {
+                display: flex;
+                align-items: center;
+                h4 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 32px;
+                    color: #0D1D4A;
+                }
+             }
+        }
+        }
+    }
+    .btnJob {
+        button {
+            background: #F75DB8;
+            border-radius: 27px;  
+            padding: 15px;  
+            font-style: normal;
+            font-weight: 800;
+            font-size: 15px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
 }
