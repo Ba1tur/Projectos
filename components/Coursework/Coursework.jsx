@@ -139,8 +139,27 @@ const Coursework = () => {
                         </div>
                     </div>
                 </div>
+                <div className={s.clouds}>
+                    <div className={s.leftCloud}>
+                        <img src="/leftCloud.png" alt="leftCloud" />
+                    </div>
+                    <div className={s.rightCloud}>
+                        <img src="/rightCloud.png" alt="rightCloud" />
+                    </div>
+                </div>
                 <div className={s.pagination}>
-
+                    <button className={s.leftArrow}>
+                        <img src="/leftArrow.png" alt="leftArrow" />
+                    </button>
+                    <div className={s.spots}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <button className={s.rightArrow}>
+                        <img src="/rightArrow.png" alt="rightArrow" />
+                    </button>
                 </div>
                 <div className={s.btnJob}>
                     <button>Узнать стоимость своей работы</button>

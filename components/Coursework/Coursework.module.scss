@@ -1,17 +1,17 @@
 .coursework {
-    height: 100%;
+    height: 100vh;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     .courseTitle {
         font-style: normal;
         font-weight: 700;
+        max-width: 800px;
         font-size: 45px;
         line-height: 50px;
         text-align: center;
         color: #0D1D4A;
-        padding: 68px 0;
         span {
             color: #7D2AEB;
         }
@@ -37,7 +37,7 @@
                 }
                 .title {
                     font-style: normal;
-                    max-width: 330px;
+                    max-width: 390px;
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 26px;
@@ -53,6 +53,7 @@
                     background: #F1F4F9;
                     border-radius: 14px;
                     padding: 6px;
+                    text-align: center;
                 }
             }
         }
@@ -65,25 +66,31 @@
                 .unique {
                     display: flex;
                     align-items: center;
-                    .subTitles {
-                        font-style: normal;
-                        font-weight: 350;
-                        font-size: 13px;
-                        line-height: 16px;
-                        color: #93A1C8;
-                    }
-                    p {
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 13px;
-                        line-height: 16px;
-                        color: #0D1D4A;
+                    justify-content: first baseline;
+                    padding: 15px 0;
+                    .uniqueTitles {
+                        padding: 0 14px;
+                        .subTitles {
+                            font-style: normal;
+                            font-weight: 350;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #93A1C8;
+                        }
+                        p {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #0D1D4A;
+                        }
                     }
                 }
                 .calendar {
                     display: flex;
                     align-items: center;
                     .calendarTitle {
+                        padding: 0 11px;
                         .calendarSmTitle {
                             font-style: normal;
                             font-weight: 350;
@@ -105,7 +112,9 @@
             .author {
                 display: flex;
                 align-items: center;
+                padding: 15px 0;
                 .name {
+                    padding: 0 10px;
                     .role {
                         font-style: normal;
                         font-weight: 350;
@@ -134,6 +143,60 @@
                 }
              }
         }
+        }
+    }
+    .clouds {
+        z-index: -1;
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+            .leftCloud {
+                position: absolute;
+                left: 0;
+                top: -200px;
+                bottom: 0;
+            }
+            .rightCloud {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+    }
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+        max-width: 300px;
+        width: 100%;
+        .leftArrow {
+            padding: 16px 13px;
+            background: #F1F4F9;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .spots {
+            display: flex;
+            width: 100%;
+            padding: 0 28px;
+            align-items: center;
+            justify-content: space-between;
+            div {
+                width: 12px;
+                height: 12px;
+                background: #F1F4F9;
+                border-radius: 12px;
+            }
+            div:nth-last-child(1) {
+                background: #93A1C8;
+            }
+        }
+        .rightArrow {
+            padding: 16px 13px;
+            background: #F1F4F9;
+            border-radius: 60px;
+            display: flex;
+            align-items: center;
         }
     }
     .btnJob {

@@ -4,6 +4,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 50px;
         h3 {
             font-family: 'Circe';
             font-style: normal;
@@ -11,11 +12,14 @@
             font-size: 45px;
             line-height: 50px;
             color: #0D1D4A;
-            padding: 50px;
+            
         }
     }
     .imagesTitle {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .images {
             position: relative; 
             width: 100%;
@@ -45,7 +49,7 @@
             display: flex;
             justify-content: space-around;
             p {
-                max-width: 270px;
+                max-width: 350px;
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 26px;
