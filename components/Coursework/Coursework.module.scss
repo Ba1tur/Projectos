@@ -17,9 +17,8 @@
         }
     }
     .courseCards {
+        max-width: 1600px;
         width: 100%;
-        display: flex;
-        justify-content: space-around;
         .cards {
             padding: 20px;
             background: #FFFFFF;
