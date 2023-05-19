@@ -2,11 +2,13 @@ import React from "react";
 import s from "./ Questions.module.scss";
 import { Collapse } from "antd";
 const { Panel } = Collapse;
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
+const text1 = `
+Для того, чтобы выбрать эксперта нужно зайти на страницу заказа и рядом со ставкой нажать кнопку ‘нанять’. Далее выбрать способ и тип оплаты и нажать кнопку ‘перейти к оплате’.
+После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
 `;
+const text2 = `После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
+`;
+
 
 const Questions = () => {
   return (
@@ -252,18 +254,30 @@ const Questions = () => {
           <div className={s.questions__card2}>
             <h1 className={s.questions__title1}>Частые вопросы</h1>
 
-            <div>
-              <Collapse defaultActiveKey={["1"]} ghost>
-                <Panel header="This is panel header 1" key="1">
-                  <p>{text}</p>
+            <div className={s.questions__box}>
+              <div className={s.questions__boxs}>
+                <Collapse defaultActiveKey={["1"]} ghost>
+                <Panel header=" Как выбрать автора и оплатить его услуги? " key="1">
+                  <p className={s.questions__text}>{text1}</p>
                 </Panel>
-                <Panel header="This is panel header 2" key="2">
-                  <p>{text}</p>
+                <Panel header=" Как оплатить [типа работы] в рассрочку? " key="2">
+                  <p className={s.questions__text}>{text2}</p>
                 </Panel>
-                <Panel header="This is panel header 3" key="3">
-                  <p>{text}</p>
+                <Panel header=" Сколько стоит выполнение [тип работы]? " key="3">
+                  <p className={s.questions__text}>{text2}</p>
+                </Panel>
+                <Panel header=" Как изменить срок сдачи? " key="4">
+                  <p className={s.questions__text}>{text2}</p>
+                </Panel>
+                <Panel header=" Какая комиссия для заказчика? " key="5">
+                  <p className={s.questions__text}>{text2}</p>
+                </Panel>
+                <Panel header=" Какая комиссия для заказчика? " key="6">
+                  <p className={s.questions__text}>{text2}</p>
                 </Panel>
               </Collapse>
+              </div>
+              
             </div>
           </div>
         </div>

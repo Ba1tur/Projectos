@@ -2,7 +2,6 @@
   background: #ffffff;
   .questions__cards {
     display: flex;
-
     justify-content: center;
     column-gap: 32px;
     .questions__card1 {
@@ -118,8 +117,9 @@
       }
     }
     .questions__card2 {
-      width: 808px;
+      width: 50%;
       height: 733px;
+      overflow-x: scroll;
       background: #7d2aeb;
       border-radius: 15px;
       .questions__title1 {
@@ -127,75 +127,78 @@
         height: 48px;
         padding-left: 40px;
         padding-top: 46px;
-        font-family: 'Circe';
+        font-family: "Circe";
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
         line-height: 48px;
-        color: #FFFFFF;
+        color: #ffffff;
       }
       .memo {
         margin: 0 auto;
         width: 88%;
         height: 196px;
         margin-top: 80px;
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 4px;
         .memo__title {
           width: 443px;
           height: 26px;
           padding: 19px 0 0 16px;
-          font-family: 'Circe';
+          font-family: "Circe";
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
           line-height: 26px;
-          
-          
-          color: #0D1D4A;
+
+          color: #0d1d4a;
         }
         .memo__titles {
           width: 80%;
           height: 90px;
           padding: 25px 0 0 16px;
-          font-family: 'Circe';
+          font-family: "Circe";
           font-style: normal;
           font-weight: 350;
           font-size: 16px;
           line-height: 22px;
-          color: #0D1D4A;
+          color: #0d1d4a;
         }
         .memo__titless {
           width: 80%;
           height: 80px;
           padding: 15px 0 0 16px;
-          font-family: 'Circe';
+          font-family: "Circe";
           font-style: normal;
           font-weight: 350;
           font-size: 16px;
           line-height: 22px;
-          color: #0D1D4A;
+          color: #0d1d4a;
         }
       }
-      .memos {
-        margin: 0 auto;
-        width: 88%;
-        height: 56px;
-        margin-top: 10px;
-        background: #FFFFFF;
-        border-radius: 4px;
-        .memos__text {
-          width: 70%;
-          font-family: 'Circe';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 26px;
-          color: #0D1D4A;
-          padding-left: 15px;
-          padding-top: 15px;
+      .questions__box {
+        display: flex;
+        justify-content: center;
+        padding-top: 60px;
+        max-width: 100%;
+        height: 100%;
+        .questions__boxs {
+          width: 90%;
+          height: 87%;
+          .questions__text {
+            padding: 0px;
+            color: #ffffff;
+          } 
         }
       }
     }
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .questions__cards {
+    // display: flex;
+    flex-direction: column;
   }
 }
