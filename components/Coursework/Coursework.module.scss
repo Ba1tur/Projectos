@@ -1,214 +1,178 @@
-.coursework {
+.course_work {
     height: 100vh;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    .courseTitle {
+    .course_work_title {
         font-style: normal;
         font-weight: 700;
         max-width: 800px;
         font-size: 45px;
         line-height: 50px;
         text-align: center;
-        color: #0D1D4A;
+        color: #0d1d4a;
         span {
-            color: #7D2AEB;
+            color: #7d2aeb;
         }
     }
-    .courseCards {
-        max-width: 1600px;
+    .course_work_cards {
         width: 100%;
-        .cards {
+        .course_work_card {
             padding: 20px;
-            background: #FFFFFF;
+            background: #ffffff;
             box-shadow: 0px 0px 15px rgba(13, 29, 74, 0.11);
             border-radius: 15px;
-            .titles {
-                .subTitle {
+            .course_card_titles {
+                p {
                     font-style: normal;
                     font-weight: 700;
                     font-size: 10px;
                     line-height: 12px;
                     letter-spacing: 0.416667px;
                     text-transform: uppercase;
-                    color: #93A1C8;
+                    color: #93a1c8;
                 }
-                .title {
+                h3 {
                     font-style: normal;
                     max-width: 390px;
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 26px;
                     padding: 14px 0;
-                    color: #0D1D4A;
+                    color: #0d1d4a;
                 }
-                .subSmTitle {
+                p:nth-child(2) {
                     font-style: normal;
                     font-weight: 350;
                     font-size: 13px;
                     line-height: 16px;
-                    color: #93A1C8;
-                    background: #F1F4F9;
+                    color: #93a1c8;
+                    background: #f1f4f9;
                     border-radius: 14px;
                     padding: 6px;
                     text-align: center;
                 }
             }
         }
-        .generalInfo {
+        .card_general_info {
             display: flex;
             justify-content: space-between;
-            .conditions {
+            .card_general_conditions {
                 display: flex;
                 flex-direction: column;
-                .unique {
+                .card_unique {
                     display: flex;
                     align-items: center;
                     justify-content: first baseline;
                     padding: 15px 0;
-                    .uniqueTitles {
+                    .card_unique_titles {
                         padding: 0 14px;
-                        .subTitles {
+                        p {
                             font-style: normal;
                             font-weight: 350;
                             font-size: 13px;
                             line-height: 16px;
-                            color: #93A1C8;
+                            color: #93a1c8;
                         }
-                        p {
+                        p:nth-child(2) {
                             font-style: normal;
                             font-weight: 700;
                             font-size: 13px;
                             line-height: 16px;
-                            color: #0D1D4A;
+                            color: #0d1d4a;
                         }
                     }
                 }
-                .calendar {
+                .card_calendar {
                     display: flex;
                     align-items: center;
-                    .calendarTitle {
+                    .card_calendar_titles {
                         padding: 0 11px;
-                        .calendarSmTitle {
+                        p {
                             font-style: normal;
                             font-weight: 350;
                             font-size: 13px;
                             line-height: 16px;
-                            color: #93A1C8;
+                            color: #93a1c8;
                         }
-                        p {
+                        p:nth-child(2) {
                             font-style: normal;
                             font-weight: 700;
                             font-size: 13px;
                             line-height: 16px;
-                            color: #0D1D4A;
+                            color: #0d1d4a;
                         }
                     }
                 }
             }
-            .authorPrice {
-            .author {
-                display: flex;
-                align-items: center;
-                padding: 15px 0;
-                .name {
-                    padding: 0 10px;
-                    .role {
-                        font-style: normal;
-                        font-weight: 350;
-                        font-size: 13px;
-                        line-height: 16px;
-                        color: #93A1C8;
+            .card_author_price {
+                .card_author_name {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+                    .card_name {
+                        padding: 0 10px;
+                        p {
+                            font-style: normal;
+                            font-weight: 350;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #93a1c8;
+                        }
+                        p:nth-child(2) {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #0d1d4a;
+                        }
                     }
-                    p {
+                }
+                .card_price {
+                    display: flex;
+                    align-items: center;
+                    h4 {
                         font-style: normal;
                         font-weight: 700;
-                        font-size: 13px;
-                        line-height: 16px;
-                        color: #0D1D4A;
+                        font-size: 30px;
+                        line-height: 32px;
+                        color: #0d1d4a;
                     }
                 }
-            } 
-             .price {
-                display: flex;
-                align-items: center;
-                h4 {
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 30px;
-                    line-height: 32px;
-                    color: #0D1D4A;
-                }
-             }
-        }
+            }
         }
     }
-    .clouds {
+    .course_work_clouds {
         z-index: -1;
-        position: relative;
+        position: absolute;
         margin: 0 auto;
         width: 100%;
-            .leftCloud {
-                position: absolute;
-                left: 0;
-                top: -200px;
-                bottom: 0;
-            }
-            .rightCloud {
-                position: absolute;
-                right: 0;
-                top: 0;
-                bottom: 0;
-            }
-    }
-    .pagination {
-        display: flex;
-        justify-content: space-between;
-        max-width: 300px;
-        width: 100%;
-        .leftArrow {
-            padding: 16px 13px;
-            background: #F1F4F9;
-            border-radius: 60px;
-            display: flex;
-            align-items: center;
+        .course_left_cloud {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
         }
-        .spots {
-            display: flex;
-            width: 100%;
-            padding: 0 28px;
-            align-items: center;
-            justify-content: space-between;
-            div {
-                width: 12px;
-                height: 12px;
-                background: #F1F4F9;
-                border-radius: 12px;
-            }
-            div:nth-last-child(1) {
-                background: #93A1C8;
-            }
-        }
-        .rightArrow {
-            padding: 16px 13px;
-            background: #F1F4F9;
-            border-radius: 60px;
-            display: flex;
-            align-items: center;
+        .course_right_cloud {
+            position: absolute;
+            right: 0;
+            top: 150px;
+            bottom: 0;
         }
     }
-    .btnJob {
+    .course_work_btn {
         button {
-            background: #F75DB8;
-            border-radius: 27px;  
-            padding: 15px;  
+            background: #f75db8;
+            border-radius: 27px;
+            padding: 15px;
             font-style: normal;
             font-weight: 800;
             font-size: 15px;
             line-height: 23px;
             text-transform: uppercase;
-            color: #FFFFFF;
+            color: #ffffff;
         }
     }
 }

@@ -1,51 +1,36 @@
 .work {
+    width: 100%;
     height: 100%;
-    .howTitle {
+    .work_how_title {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 50px;
         h3 {
-            font-family: 'Circe';
+            font-family: "Circe";
             font-style: normal;
             font-weight: 700;
             font-size: 45px;
             line-height: 50px;
-            color: #0D1D4A;
-            
+            color: #0d1d4a;
         }
     }
-    .imagesTitle {
+    .work_img_title {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .images {
-            position: relative; 
+        .work_images {
             width: 100%;
-            height: 170px;
-            .arrowImg {
-                z-index: -1;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: center;
-                }
-                
-            }
-            .workInfo {
+            .work_info_img {
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
                 width: 100%;
                 height: 100%;
-            } 
+            }
         }
-        .workTitle {
+        .work_images_title {
             display: flex;
             justify-content: space-around;
             p {
@@ -54,7 +39,7 @@
                 font-size: 20px;
                 line-height: 26px;
                 text-align: center;
-                color: #0D1D4A;
+                color: #0d1d4a;
                 padding: 40px 0;
             }
         }
