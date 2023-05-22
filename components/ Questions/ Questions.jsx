@@ -9,146 +9,59 @@ const text1 = `
 const text2 = `После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
 `;
 
-
 const Questions = () => {
   return (
     <div>
-      <section className={s.questions}>
-        <div className={s.questions__cards}>
-          <div className={s.questions__card1}>
-            <h1 className={s.questions__title}>Гарантия, зачем она нужна?</h1>
+      <section className="container">
+        <div className={s.questions_main}>
+          <div className={s.questions_card}>
+            <h1 className={s.questions_title}>Гарантия, зачем она нужна?</h1>
 
-            <div className={s.box}>
-              <div className={s.box1}>
-                <svg
-                  width="71"
-                  height="72"
-                  viewBox="0 0 71 72"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="files-and-folders">
-                    <path
-                      id="Path"
-                      d="M57.6875 72H13.3125C5.95956 72 0 65.9565 0 58.5V13.5C0 6.0435 5.95956 0 13.3125 0H57.6875C65.0404 0 71 6.0435 71 13.5V58.5C71 65.9565 65.0404 72 57.6875 72Z"
-                      fill="#F5E6FE"
-                    />
-                    <path
-                      id="Path_2"
-                      d="M35.8333 20.9992H34.123C33.6073 19.2757 31.96 18 30 18C28.04 18 26.3903 19.2757 25.877 20.9992H24.1667C23.5297 20.9992 23 21.51 23 22.1242V24.3742C23 25.8142 24.2297 27 25.723 27H34.277C35.7703 27 37 25.8142 37 24.3742V22.1242C37 21.51 36.4703 20.9992 35.8333 20.9992Z"
-                      fill="#D9A4FC"
-                    />
-                    <path
-                      id="Shape"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M38.9565 23H38.5881V24.8743C38.5881 27.1535 36.7792 28.9985 34.5446 28.9985H26.4554C24.2208 28.9985 22.4119 27.1535 22.4119 24.8743V23H22.0435C19.8089 23 18 24.845 18 27.1242V45.8735C18 48.155 19.8089 50 22.0435 50H35.6608C35.7049 48.1257 36.1307 46.355 36.8675 44.7507H23.5149C22.9126 44.7507 22.4119 44.24 22.4119 43.6257C22.4119 43.0115 22.9126 42.5007 23.5149 42.5007H37.4851C37.6903 42.5007 37.8822 42.5615 38.0432 42.665C39.3072 40.82 41.0146 39.3193 43 38.3V27.1242C43 24.845 41.1911 23 38.9565 23ZM37.4851 39.875H23.5149C22.9126 39.875 22.4119 39.3643 22.4119 38.75C22.4119 38.1357 22.9126 37.625 23.5149 37.625H37.4851C38.0874 37.625 38.5881 38.1357 38.5881 38.75C38.5881 39.3643 38.0896 39.875 37.4851 39.875ZM23.5149 34.9993H37.4851C38.0896 34.9993 38.5881 34.4908 38.5881 33.8743C38.5881 33.26 38.0874 32.7493 37.4851 32.7493H23.5149C22.9126 32.7493 22.4119 33.26 22.4119 33.8743C22.4119 34.4885 22.9126 34.9993 23.5149 34.9993Z"
-                      fill="#BE63F9"
-                    />
-                    <g id="Group">
-                      <path
-                        id="Path_3"
-                        d="M39.5421 54C38.7167 54 38.046 53.3217 38.046 52.4868V49.8393C38.046 44.002 42.7406 39.2515 48.5141 39.2515H51.504C52.3294 39.2515 53 39.9298 53 40.7647C53 41.5995 52.3294 42.2779 51.504 42.2779H48.5141C44.3914 42.2779 41.0382 45.6695 41.0382 49.8393V52.4868C41.0382 53.3239 40.3675 54 39.5421 54Z"
-                        fill="#D9A4FC"
-                      />
-                      <path
-                        id="Path_4"
-                        d="M47.0179 46.4386C46.8138 46.4386 46.6097 46.3955 46.4146 46.3115C45.8718 46.071 45.5219 45.5266 45.5219 44.9276V36.6085C45.5219 36.0095 45.8718 35.4651 46.4146 35.2246C46.9551 34.9841 47.5876 35.0885 48.0273 35.4946L52.5133 39.653C52.825 39.9366 53 40.3427 53 40.7669C53 41.1912 52.825 41.595 52.5155 41.8831L48.0295 46.0415C47.7491 46.3002 47.3858 46.4386 47.0179 46.4386Z"
-                        fill="#D9A4FC"
-                      />
-                    </g>
-                  </g>
-                </svg>
-                <p className={s.box__title}>
+            <div className={s.questions_box}>
+              <div className={s.questions__boxes}>
+                <img src="/question-notebook.png" alt="notebook" />
+
+                <p className={s.questions__boxes_title}>
                   Студент получает работу от Автора
                 </p>
               </div>
-              <div className={s.box1}>
-                <svg
-                  width="71"
-                  height="72"
-                  viewBox="0 0 71 72"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="smiley">
-                    <path
-                      id="Path"
-                      d="M57.6875 72H13.3125C5.95956 72 0 65.9565 0 58.5V13.5C0 6.0435 5.95956 0 13.3125 0H57.6875C65.0404 0 71 6.0435 71 13.5V58.5C71 65.9565 65.0404 72 57.6875 72Z"
-                      fill="#FFCCEA"
-                    />
-                    <path
-                      id="Shape"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M18 36C18 26.0708 26.0708 18 36 18C45.9292 18 54 26.0708 54 36C54 45.9292 45.9292 54 36 54C26.0708 54 18 45.9292 18 36ZM24.8108 40.5C26.4893 45.2407 30.9757 48.42 36 48.42C41.0243 48.42 45.5108 45.2407 47.1938 40.5C47.313 40.1557 47.2523 39.78 47.043 39.4807C46.8315 39.1815 46.4872 39.0015 46.1272 39.0015H25.8773C25.5173 39.0015 25.1708 39.1815 24.9615 39.4807C24.75 39.78 24.6915 40.1557 24.8108 40.5ZM29.25 32.2493C30.0758 32.2493 30.7507 31.5743 30.7507 30.7485C30.7507 30.1342 31.2615 29.6235 31.8757 29.6235C32.49 29.6235 33.0007 30.1342 33.0007 30.7485C33.0007 32.8185 31.32 34.4993 29.25 34.4993C27.18 34.4993 25.4992 32.8185 25.4992 30.7485C25.4992 30.1342 26.01 29.6235 26.6243 29.6235C27.2385 29.6235 27.7493 30.1342 27.7493 30.7485C27.7493 31.5743 28.4242 32.2493 29.25 32.2493ZM44.2508 30.7485C44.2508 31.5743 43.5758 32.2493 42.75 32.2493C41.9242 32.2493 41.2493 31.5743 41.2493 30.7485C41.2493 30.1342 40.7385 29.6235 40.1243 29.6235C39.51 29.6235 38.9993 30.1342 38.9993 30.7485C38.9993 32.8185 40.68 34.4993 42.75 34.4993C44.82 34.4993 46.5008 32.8185 46.5008 30.7485C46.5008 30.1342 45.99 29.6235 45.3758 29.6235C44.7615 29.6235 44.2508 30.1342 44.2508 30.7485Z"
-                      fill="#F75DB8"
-                    />
-                  </g>
-                </svg>
-                <p className={s.box__title1}>
+              <div className={s.questions__boxes}>
+                <img src="/question-smiley.png" alt="smiley" />
+
+                <p className={s.questions__boxes_titles}>
                   После доработок преподаватель принимает работу и студент
                   доволен
                 </p>
               </div>
-              <div className={s.box1}>
-                <svg
-                  width="71"
-                  height="71"
-                  viewBox="0 0 71 71"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g id="Group 12">
-                    <g id="money (1)">
-                      <path
-                        id="Path"
-                        d="M57.6875 71H13.3125C5.95964 71 0 65.0404 0 57.6875V13.3125C0 5.95964 5.95964 0 13.3125 0H57.6875C65.0404 0 71 5.95964 71 13.3125V57.6875C71 65.0404 65.0404 71 57.6875 71Z"
-                        fill="#FFF9DD"
-                      />
-                    </g>
-                    <circle
-                      id="Oval"
-                      cx="35.5"
-                      cy="35.5"
-                      r="17.5"
-                      fill="#FFD304"
-                    />
-                    <path
-                      id="&#226;&#130;&#189;"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M34.0441 41.1966V44H31.2469V41.1966H29V39.0997H31.2469V37.208H29V35.1111H31.2469V28.0456C31.6685 28.0456 32.452 28.0355 33.2802 28.0247C34.2085 28.0127 35.1928 28 35.7866 28C40.5326 28 42 30.0513 42 32.6724C42 35.4074 39.9594 37.208 36.1534 37.208H34.0441V39.0997H37.8042V41.1966H34.0441ZM34 35H36.0276C37.6866 35 39 34.4924 39 33.0508C39 31.5685 37.9631 31 36.0507 31C35.5146 31 34.8587 31.0176 34.1574 31.0364C34.1052 31.0378 34.0527 31.0392 34 31.0406V35Z"
-                      fill="white"
-                    />
-                  </g>
-                </svg>
-                <p className={s.box__title}>
+              <div className={s.questions__boxes}>
+                <img src="/question-money.png" alt="money" />
+
+                <p className={s.questions__boxes_title}>
                   И только после этого эксперт получит зарплату
                 </p>
               </div>
-              <div className={s.box2}>
-                <div className={s.decs1}>
-                  <p className={s.decs__text}>Техподдержка</p>
-                  <p className={s.decs__text}>Гарантия</p>
-                  <p className={s.decs__text}>Эксперт</p>
-                  <p className={s.decs__text}>Цена</p>
-                  <p className={s.decs__text}>Срок выполнения</p>
-                  <p className={s.decs__text}>Оригинальность</p>
-                  <p className={s.decs__text}>Доработки</p>
+              <div className={s.questions_decs}>
+                <div className={s.questions__decs}>
+                  <p>Техподдержка</p>
+                  <p>Гарантия</p>
+                  <p>Эксперт</p>
+                  <p>Цена</p>
+                  <p>Срок выполнения</p>
+                  <p>Оригинальность</p>
+                  <p>Доработки</p>
                 </div>
 
-                <div className={s.decs2}>
-                  <p className={s.decs__text1}>24/7 </p>
-                  <p className={s.decs__text1}>20 дней</p>
-                  <p className={s.decs__text1}>выбираете сами</p>
-                  <p className={s.decs__text1}>назначаете сами</p>
-                  <p className={s.decs__text1}>для каждого типа свой</p>
-                  <p className={s.decs__text1}>От 95%</p>
-                  <p className={s.decs__text1}>Бесплатно</p>
+                <div className={s.questions_desc}>
+                  <p>24/7 </p>
+                  <p>20 дней</p>
+                  <p>выбираете сами</p>
+                  <p>назначаете сами</p>
+                  <p>для каждого типа свой</p>
+                  <p>От 95%</p>
+                  <p>Бесплатно</p>
                 </div>
-                <div className={s.decs3}>
-                  <p className={s.decs__text2}>
+                <div className={s.questions_mark}>
+                  <p className={s.questions__mark_text}>
                     <svg
                       width="10"
                       height="8"
@@ -162,7 +75,7 @@ const Questions = () => {
                       />
                     </svg>
                   </p>
-                  <p className={s.decs__text2}>
+                  <p className={s.questions__mark_text}>
                     <svg
                       width="10"
                       height="8"
@@ -176,7 +89,7 @@ const Questions = () => {
                       />
                     </svg>
                   </p>
-                  <p className={s.decs__text2}>
+                  <p className={s.questions__mark_text}>
                     <svg
                       width="10"
                       height="8"
@@ -190,7 +103,7 @@ const Questions = () => {
                       />
                     </svg>
                   </p>
-                  <p className={s.decs__text2}>
+                  <p className={s.questions__mark_text}>
                     <svg
                       width="10"
                       height="8"
@@ -204,7 +117,7 @@ const Questions = () => {
                       />
                     </svg>
                   </p>
-                  <p className={s.decs__text2}>
+                  <p className={s.questions__mark_text}>
                     <svg
                       width="10"
                       height="8"
@@ -218,7 +131,7 @@ const Questions = () => {
                       />
                     </svg>
                   </p>
-                  <p className={s.decs__text2}>
+                  <p className={s.questions__mark_text}>
                     <svg
                       width="10"
                       height="8"
@@ -232,7 +145,7 @@ const Questions = () => {
                       />
                     </svg>
                   </p>
-                  <p className={s.decs__text2}>
+                  <p className={s.questions__mark_text}>
                     <svg
                       width="10"
                       height="8"
@@ -251,33 +164,31 @@ const Questions = () => {
             </div>
           </div>
 
-          <div className={s.questions__card2}>
-            <h1 className={s.questions__title1}>Частые вопросы</h1>
-
-            <div className={s.questions__box}>
-              <div className={s.questions__boxs}>
+          <div className={s.questions_right}>
+            <h1 className={s.questions__right_title}>Частые вопросы</h1>
+            <div className={s.questions__right_box}>
+              <div className={s.questions__right_boxs}>
                 <Collapse defaultActiveKey={["1"]} ghost>
-                <Panel header=" Как выбрать автора и оплатить его услуги? " key="1">
-                  <p className={s.questions__text}>{text1}</p>
-                </Panel>
-                <Panel header=" Как оплатить [типа работы] в рассрочку? " key="2">
-                  <p className={s.questions__text}>{text2}</p>
-                </Panel>
-                <Panel header=" Сколько стоит выполнение [тип работы]? " key="3">
-                  <p className={s.questions__text}>{text2}</p>
-                </Panel>
-                <Panel header=" Как изменить срок сдачи? " key="4">
-                  <p className={s.questions__text}>{text2}</p>
-                </Panel>
-                <Panel header=" Какая комиссия для заказчика? " key="5">
-                  <p className={s.questions__text}>{text2}</p>
-                </Panel>
-                <Panel header=" Какая комиссия для заказчика? " key="6">
-                  <p className={s.questions__text}>{text2}</p>
-                </Panel>
-              </Collapse>
+                  <Panel header=" Как выбрать автора и оплатить его услуги? " key="1">
+                    <p>{text1}</p>
+                  </Panel>
+                  <Panel header=" Как оплатить [типа работы] в рассрочку? " key="2">
+                    <p>{text2}</p>
+                  </Panel>
+                  <Panel header=" Сколько стоит выполнение [тип работы]? " key="3">
+                    <p>{text2}</p>
+                  </Panel>
+                  <Panel header=" Как изменить срок сдачи? " key="4">
+                    <p>{text2}</p>
+                  </Panel>
+                  <Panel header=" Какая комиссия для заказчика? " key="5">
+                    <p>{text2}</p>
+                  </Panel>
+                  <Panel header=" Какая комиссия для заказчика? " key="6">
+                    <p>{text2}</p>
+                  </Panel>
+                </Collapse>
               </div>
-              
             </div>
           </div>
         </div>
