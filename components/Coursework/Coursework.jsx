@@ -19,11 +19,11 @@ const Coursework = ({ name, price, img }) => {
         <div className={s.course_work_cards}>
           <Swiper
             style={{
-              "--swiper-pagination-color": "gray",
+              "--swiper-pagination-color": "#93A1C8",
             }}
             grabCursor
             loop
-            speed={3500}
+            speed={100}
             slidesPerView={3}
             navigation={true}
             pagination={{
@@ -42,9 +42,7 @@ const Coursework = ({ name, price, img }) => {
                     <h3>
                       Управление персоналом в условиях неподчинения сотрудников
                     </h3>
-                    <p>
-                      Дипломная работа, Управление персоналом, 15 страниц
-                    </p>
+                    <p>Дипломная работа, Управление персоналом, 15 страниц</p>
                   </div>
                   <div className={s.card_general_info}>
                     <div className={s.card_general_conditions}>

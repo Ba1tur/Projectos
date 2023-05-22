@@ -28,6 +28,9 @@ const Work = () => {
             <p>Получаешь готовую работу и 20-дневную гарантию</p>
           </div>
         </div>
+        <div className={s.work_img_info}>
+          <img src="/arrow.png" alt="your image" />
+        </div>
       </div>
     </div>
   );

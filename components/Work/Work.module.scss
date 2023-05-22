@@ -1,11 +1,13 @@
 .work {
     width: 100%;
     height: 100%;
+    
     .work_how_title {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 50px;
+
         h3 {
             font-family: "Circe";
             font-style: normal;
@@ -15,13 +17,16 @@
             color: #0d1d4a;
         }
     }
+
     .work_img_title {
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
         .work_images {
             width: 100%;
+
             .work_info_img {
                 display: flex;
                 align-items: center;
@@ -30,9 +35,11 @@
                 height: 100%;
             }
         }
+
         .work_images_title {
             display: flex;
             justify-content: space-around;
+
             p {
                 max-width: 350px;
                 font-weight: 700;
@@ -42,6 +49,23 @@
                 color: #0d1d4a;
                 padding: 40px 0;
             }
+        }
+    }
+
+    .work_img_info {
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 100%;
+        max-height: 170px;
+        height: 100%;
+        z-index: -1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
     }
 }

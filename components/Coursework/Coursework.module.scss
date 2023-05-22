@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
     .course_work_title {
         font-style: normal;
         font-weight: 700;
@@ -13,18 +14,23 @@
         line-height: 50px;
         text-align: center;
         color: #0d1d4a;
+
         span {
             color: #7d2aeb;
         }
     }
+
     .course_work_cards {
         width: 100%;
+
         .course_work_card {
             padding: 20px;
             background: #ffffff;
             box-shadow: 0px 0px 15px rgba(13, 29, 74, 0.11);
             border-radius: 15px;
+
             .course_card_titles {
+
                 p {
                     font-style: normal;
                     font-weight: 700;
@@ -34,6 +40,7 @@
                     text-transform: uppercase;
                     color: #93a1c8;
                 }
+
                 h3 {
                     font-style: normal;
                     max-width: 390px;
@@ -43,6 +50,7 @@
                     padding: 14px 0;
                     color: #0d1d4a;
                 }
+
                 p:nth-child(2) {
                     font-style: normal;
                     font-weight: 350;
@@ -56,19 +64,24 @@
                 }
             }
         }
+
         .card_general_info {
             display: flex;
             justify-content: space-between;
+            
             .card_general_conditions {
                 display: flex;
                 flex-direction: column;
+            
                 .card_unique {
                     display: flex;
                     align-items: center;
                     justify-content: first baseline;
                     padding: 15px 0;
+            
                     .card_unique_titles {
                         padding: 0 14px;
+            
                         p {
                             font-style: normal;
                             font-weight: 350;
@@ -76,6 +89,7 @@
                             line-height: 16px;
                             color: #93a1c8;
                         }
+            
                         p:nth-child(2) {
                             font-style: normal;
                             font-weight: 700;
@@ -85,11 +99,14 @@
                         }
                     }
                 }
+            
                 .card_calendar {
                     display: flex;
                     align-items: center;
+            
                     .card_calendar_titles {
                         padding: 0 11px;
+            
                         p {
                             font-style: normal;
                             font-weight: 350;
@@ -97,6 +114,7 @@
                             line-height: 16px;
                             color: #93a1c8;
                         }
+            
                         p:nth-child(2) {
                             font-style: normal;
                             font-weight: 700;
@@ -107,13 +125,17 @@
                     }
                 }
             }
+            
             .card_author_price {
+            
                 .card_author_name {
                     display: flex;
                     align-items: center;
                     padding: 15px 0;
+            
                     .card_name {
                         padding: 0 10px;
+            
                         p {
                             font-style: normal;
                             font-weight: 350;
@@ -121,6 +143,7 @@
                             line-height: 16px;
                             color: #93a1c8;
                         }
+            
                         p:nth-child(2) {
                             font-style: normal;
                             font-weight: 700;
@@ -130,9 +153,11 @@
                         }
                     }
                 }
+            
                 .card_price {
                     display: flex;
                     align-items: center;
+            
                     h4 {
                         font-style: normal;
                         font-weight: 700;
@@ -144,17 +169,20 @@
             }
         }
     }
+    
     .course_work_clouds {
         z-index: -1;
         position: absolute;
         margin: 0 auto;
         width: 100%;
+    
         .course_left_cloud {
             position: absolute;
             left: 0;
             top: 0;
             bottom: 0;
         }
+    
         .course_right_cloud {
             position: absolute;
             right: 0;
@@ -162,7 +190,9 @@
             bottom: 0;
         }
     }
+    
     .course_work_btn {
+   
         button {
             background: #f75db8;
             border-radius: 27px;
