@@ -2,16 +2,16 @@ import React from "react";
 import s from "./ Questions.module.scss";
 import { Collapse } from "antd";
 const { Panel } = Collapse;
-const text1 = `
+const textOne = `
 Для того, чтобы выбрать эксперта нужно зайти на страницу заказа и рядом со ставкой нажать кнопку ‘нанять’. Далее выбрать способ и тип оплаты и нажать кнопку ‘перейти к оплате’.
 После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
 `;
-const text2 = `После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
+const textTwo = `После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
 `;
 
 const Questions = () => {
   return (
-    <div>
+
       <section className="container">
         <div className={s.questions_main}>
           <div className={s.questions_card}>
@@ -170,22 +170,22 @@ const Questions = () => {
               <div className={s.questions__right_boxs}>
                 <Collapse defaultActiveKey={["1"]} ghost>
                   <Panel header=" Как выбрать автора и оплатить его услуги? " key="1">
-                    <p>{text1}</p>
+                    <p>{textOne}</p>
                   </Panel>
                   <Panel header=" Как оплатить [типа работы] в рассрочку? " key="2">
-                    <p>{text2}</p>
+                    <p>{textTwo}</p>
                   </Panel>
                   <Panel header=" Сколько стоит выполнение [тип работы]? " key="3">
-                    <p>{text2}</p>
+                    <p>{textTwo}</p>
                   </Panel>
                   <Panel header=" Как изменить срок сдачи? " key="4">
-                    <p>{text2}</p>
+                    <p>{textTwo}</p>
                   </Panel>
                   <Panel header=" Какая комиссия для заказчика? " key="5">
-                    <p>{text2}</p>
+                    <p>{textTwo}</p>
                   </Panel>
                   <Panel header=" Какая комиссия для заказчика? " key="6">
-                    <p>{text2}</p>
+                    <p>{textTwo}</p>
                   </Panel>
                 </Collapse>
               </div>
@@ -193,7 +193,7 @@ const Questions = () => {
           </div>
         </div>
       </section>
-    </div>
+    
   );
 };
 

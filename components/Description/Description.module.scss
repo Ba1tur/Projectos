@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  // row-gap: 30px;
-  height: 70vh;
+  row-gap: 30px;
+  height: 100%;
 
   .description_card {
     h1 {
@@ -15,10 +15,12 @@
       font-size: 30px;
       line-height: 32px;
       color: #0d1d4a;
+      height: 100%;
     }
   }
   .description__sm_card {
     p {
+      height: 100%;
       width: 81%;
       margin: 0 auto;
       font-family: "Circe";
@@ -38,22 +40,30 @@
     div {
       display: flex;
       flex-direction: column;
-      row-gap: 15px;
-      column-gap: 10px;
+      row-gap: 23px;
       
+
       p {
-      
+        display: flex;
+        align-items: center;
         font-family: "Circe";
         font-style: normal;
         font-weight: 350;
         font-size: 16px;
         line-height: 24px;
-      
+
         color: #0d1d4a;
         svg {
           margin-right: 15px;
-         
         }
+      }
+    }
+    .description__md_card_boxs {
+      div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        column-gap: 10px;
       }
     }
   }

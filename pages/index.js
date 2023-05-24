@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Inter, Praise } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Questions from '@/components/ Questions/ Questions'
 import Answers from '@/components/Answers/Answers'
 import Description from '@/components/Description/Description'
+import Prices from '@/components/Prices/Prices'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Questions/>
       <Answers/>
       <Description/>
+      <Prices/>
     </>
   )
 }
