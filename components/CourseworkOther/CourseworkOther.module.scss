@@ -21,7 +21,7 @@
             display: flex;
             justify-content: space-between;
             .suggestions_emoji_title {
-                max-width: 100px;
+                max-width: 120px;
                 width: 100%;
                 height: 100%;
                 .suggestions_emoji {
@@ -37,13 +37,12 @@
                         font-style: normal;
                         font-weight: 400;
                         font-size: 35px;
-                        line-height: 100px;
+                        line-height: 120px;
                         color: #0d1d4a;
                     }
                 }
                 .suggestions_title {
                     p {
-                        max-width: 146px;
                         font-style: normal;
                         font-weight: 700;
                         font-size: 16px;
