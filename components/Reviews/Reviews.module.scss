@@ -87,6 +87,7 @@
             font-weight: 350;
             font-size: 30px;
             line-height: 48px;
+            text-align: center;
             color: #ffffff;
         }
     }
@@ -105,6 +106,123 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 1310px) {
+    .reviews {
+        .reviews_background_elements {
+            .background_left_element {
+                left: 0;
+            }
+            .background_right_element {
+                right: 0;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .reviews {
+        .rewievs_title {
+            h4 {
+                font-size: 40px;
+            }
+        }
+        .reviews_small_title {
+            h3 {
+                font-size: 27px;
+            }
+        }
+    }
+}
+@media (max-width: 661px) {
+    .reviews {
+        .rewievs_title {
+            h4 {
+                font-size: 35px;
+            }
+        }
+        .reviews_small_title {
+            h3 {
+                font-size: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 578px) {
+    .reviews {
+        .rewievs_title {
+            h4 {
+                font-size: 30px;
+            }
+        }
+        .reviews_small_title {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 496px) {
+    .reviews {
+        .reviews_background_elements {
+            .background_left_element {
+                display: none;
+            }
+        }
+        .rewievs_title {
+            h4 {
+                font-size: 28px;
+            }
+        }
+        .reviews_small_title {
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
+}
+@media (max-width: 462px) {
+    .reviews {
+        .rewievs_title {
+            h4 {
+                font-size: 25px;
+            }
+        }
+        .reviews_small_title {
+            h3 {
+                font-size: 16px;
+            }
+        }
+        .reviews_btn {
+            button {
+                font-size: 14px;
+                padding: 25px 75px;
+            }
+        }
+    }
+}
+@media (max-width: 413px) {
+    .reviews {
+        .rewievs_title {
+            h4 {
+                font-size: 23px;
+            }
+        }
+        .reviews_small_title {
+            h3 {
+                font-size: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 380px) {
+    .reviews {
+        .rewievs_title {
+            h4 {
+                font-size: 22px;
+            }
         }
     }
 }

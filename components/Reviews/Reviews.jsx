@@ -76,6 +76,9 @@ const Reviews = () => {
                 420: {
                   slidesPerView: 1,
                 },
+                320: {
+                  slidesPerView: 1,
+                },
               }}
               modules={[FreeMode, Pagination]}
               className="reviewsSwiper"

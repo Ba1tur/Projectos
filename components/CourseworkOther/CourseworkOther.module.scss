@@ -92,3 +92,80 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .course_work_other {
+        .course_work_other_title {
+            p {
+                font-size: 40px;
+            }
+        }
+        .course_work_other_suggestions {
+            .suggestions_bottom_row {
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 661px) {
+    .course_work_other {
+        .course_work_other_title {
+            p {
+                font-size: 35px;
+            }
+        }
+    }
+}
+@media (max-width: 578px) {
+    .course_work_other {
+        .course_work_other_title {
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 496px) {
+    .course_work_other {
+        .course_work_other_title {
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+}
+@media (max-width: 413px) {
+    .course_work_other { 
+        .course_work_other_title {
+            p {
+                font-size: 25px;
+            }
+        }
+        .course_work_other_suggestions {
+            .suggestions_top_row {
+                .suggestions_emoji_title {
+                    max-width: 100px;
+                    .suggestions_emoji {
+                        p {
+                            line-height: 100px;
+                        }
+                    }
+                    .suggestions_title {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 380px) {
+    .course_work_other {
+        .course_work_other_title {
+            p {
+                font-size: 23px;
+            }
+        }
+    }
+}

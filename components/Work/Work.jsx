@@ -21,9 +21,8 @@ const Work = () => {
                 spaceBetween={30}
                 freeMode={true}
                 grabCursor
-                loop
                 style={{
-                  "--swiper-pagination-color": "#FFFFFF",
+                  "--swiper-pagination-color": "#93A1C8",
                 }}
                 pagination={{
                   clickable: true,
@@ -73,6 +72,9 @@ const Work = () => {
                     slidesPerView: 2,
                   },
                   420: {
+                    slidesPerView: 1,
+                  },
+                  320: {
                     slidesPerView: 1,
                   },
                 }}

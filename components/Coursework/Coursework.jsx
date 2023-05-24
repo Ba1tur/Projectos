@@ -68,11 +68,12 @@ const Coursework = ({ name, price, img }) => {
               726: {
                 slidesPerView: 2,
               },
-              
-              
               420: {
                 slidesPerView: 1,
-              }
+              },
+              320: {
+                slidesPerView: 1,
+              },
             }}
             modules={[Navigation, Pagination, Autoplay]}
             className="course_work_swiper"
