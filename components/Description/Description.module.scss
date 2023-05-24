@@ -1,0 +1,60 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  // row-gap: 30px;
+  height: 70vh;
+
+  .description_card {
+    h1 {
+      width: 81%;
+      margin: 0 auto;
+      font-family: "Circe";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 32px;
+      color: #0d1d4a;
+    }
+  }
+  .description__sm_card {
+    p {
+      width: 81%;
+      margin: 0 auto;
+      font-family: "Circe";
+      font-style: normal;
+      font-weight: 350;
+      font-size: 13px;
+      line-height: 18px;
+      color: #0d1d4a;
+    }
+  }
+  .description__md_card {
+    display: flex;
+    justify-content: space-between;
+    width: 81%;
+    margin: 0 auto;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      column-gap: 10px;
+      
+      p {
+      
+        font-family: "Circe";
+        font-style: normal;
+        font-weight: 350;
+        font-size: 16px;
+        line-height: 24px;
+      
+        color: #0d1d4a;
+        svg {
+          margin-right: 15px;
+         
+        }
+      }
+    }
+  }
+}
