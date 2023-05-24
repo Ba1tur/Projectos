@@ -27,6 +27,8 @@ const Reviews = () => {
               slidesPerView={3}
               spaceBetween={30}
               freeMode={true}
+              grabCursor
+              loop
               style={{
                 "--swiper-pagination-color": "#FFFFFF",
               }}

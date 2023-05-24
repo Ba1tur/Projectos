@@ -9,7 +9,7 @@ const CourseworkOther = () => {
           <p>Курсовые работы по другим предметам</p>
         </div>
         <div className={s.course_work_other_suggestions}>
-          <div className={s.suggestions_row}>
+          <div className={s.suggestions_top_row}>
             {" "}
             {top_row.map((item) => (
               <div className={s.suggestions_emoji_title}>
@@ -24,9 +24,9 @@ const CourseworkOther = () => {
           </div>
         </div>
         <div className={s.course_work_other_suggestions}>
-          <div className={s.suggestions_row}>
+          <div className={s.suggestions_bottom_row}>
             {" "}
-            {top_row.map((item) => (
+            {bottom_row.map((item) => (
               <div className={s.suggestions_emoji_title}>
                 <div className={s.suggestions_emoji}>
                   <p>{item.emoji}</p>
