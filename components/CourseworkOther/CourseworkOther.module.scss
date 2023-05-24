@@ -20,6 +20,7 @@
         .suggestions_row {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             .suggestions_emoji_title {
                 max-width: 120px;
                 width: 100%;

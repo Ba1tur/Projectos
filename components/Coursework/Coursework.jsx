@@ -29,7 +29,7 @@ const Coursework = ({ name, price, img }) => {
             pagination={{
               clickable: true,
             }}
-            spaceBetween={35}
+            spaceBetween={20}
             breakpoints={{
               1520: {
                 slidesPerView: 3

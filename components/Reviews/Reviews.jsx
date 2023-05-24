@@ -1,5 +1,10 @@
 import React from "react";
 import s from "./Reviews.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { FreeMode, Pagination } from "swiper";
 
 const Reviews = () => {
   return (
@@ -17,21 +22,103 @@ const Reviews = () => {
               <img src="/Waves.png" alt="waves" />
             </div>
           </div>
-          <div className={s.reviews_videos}>
-            <div className={s.reviews_video_elements}>
-              <img src="/video.png" alt="video" />
-            </div>
-            <div className={s.reviews_video_elements}>
-              <img src="/video.png" alt="video" />
-            </div>
-            <div className={s.reviews_video_elements}>
-              <img src="/video.png" alt="video" />
-            </div>
+          <div className={s.reviews_swiper}>
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              freeMode={true}
+              style={{
+                "--swiper-pagination-color": "#FFFFFF",
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                1520: {
+                  slidesPerView: 3,
+                },
+                1420: {
+                  slidesPerView: 3,
+                },
+                1320: {
+                  slidesPerView: 3,
+                },
+                1220: {
+                  slidesPerView: 3,
+                },
+                1166: {
+                  slidesPerView: 3,
+                },
+
+                1165: {
+                  slidesPerView: 2,
+                },
+                1065: {
+                  slidesPerView: 2,
+                },
+                950: {
+                  slidesPerView: 2,
+                },
+                900: {
+                  slidesPerView: 2,
+                },
+                850: {
+                  slidesPerView: 2,
+                },
+                750: {
+                  slidesPerView: 2,
+                },
+                726: {
+                  slidesPerView: 2,
+                },
+                420: {
+                  slidesPerView: 1,
+                },
+              }}
+              modules={[FreeMode, Pagination]}
+              className="reviewsSwiper"
+            >
+              {" "}
+              <SwiperSlide>
+                <div className={s.reviews_video}>
+                  <img src="/video.png" alt="video" />
+                  <div className={s.reviews_pause_video}>
+                    <img src="/pause.png" alt="" />
+                    <p>
+                      Автор24 помогает мне зарабатывать , не отвлекаясь от
+                      учебного процесса
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={s.reviews_video}>
+                  <img src="/video.png" alt="video" />
+                  <div className={s.reviews_pause_video}>
+                    <img src="/pause.png" alt="" />
+                    <p>
+                      Автор24 помогает мне зарабатывать , не отвлекаясь от
+                      учебного процесса
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={s.reviews_video}>
+                  <img src="/video.png" alt="video" />
+                  <div className={s.reviews_pause_video}>
+                    <img src="/pause.png" alt="" />
+                    <p>
+                      Автор24 помогает мне зарабатывать , не отвлекаясь от
+                      учебного процесса
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
           <div className={s.reviews_small_title}>
-            <h3>
-              Оставь заявку и выбери лучшего автора на основании отзывов
-            </h3>
+            <h3>Оставь заявку и выбери лучшего автора на основании отзывов</h3>
           </div>
           <div className={s.reviews_btn}>
             <button>Разместить заказ</button>
