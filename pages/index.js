@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css'
 import Work from '@/components/Work/Work'
 import Coursework from '@/components/Coursework/Coursework'
 import Reviews from '@/components/Reviews/Reviews'
+import CourseworkOther from '@/components/CourseworkOther/CourseworkOther'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function Home() {
       <Work/>
       <Coursework/>
       <Reviews/>
+      <CourseworkOther/>
     </>
   )
 }

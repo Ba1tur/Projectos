@@ -5,5 +5,4 @@ export const coursework = [
     {id:4, name: "Ольга Анатольевна", price: "3500", img: "/author.png" },
     {id:5, name: "Надежда Петровна", price: "9500", img: "/author.png" },
     {id:6, name: "Раиса Федоровна", price: "1000", img: "/author.png" },
-    
 ]
