@@ -29,6 +29,51 @@ const Coursework = ({ name, price, img }) => {
             pagination={{
               clickable: true,
             }}
+            spaceBetween={35}
+            breakpoints={{
+              1520: {
+                slidesPerView: 3
+              },
+              1420: {
+                slidesPerView: 3
+              },
+              1320: {
+                slidesPerView: 3
+              },
+              1220: {
+                slidesPerView: 3
+              },
+              1166: {
+                slidesPerView: 3
+              },
+
+              1165: {
+                slidesPerView: 2,
+              },
+              1065: {
+                slidesPerView: 2,
+              },
+              950: {
+                slidesPerView: 2,
+              },
+              900: {
+                slidesPerView: 2,
+              },
+              850: {
+                slidesPerView: 2,
+              },
+              750: {
+                slidesPerView: 2,
+              },
+              726: {
+                slidesPerView: 2,
+              },
+              
+              
+              420: {
+                slidesPerView: 1,
+              }
+            }}
             modules={[Navigation, Pagination, Autoplay]}
             className="course_work_swiper"
             contextMenu=""
