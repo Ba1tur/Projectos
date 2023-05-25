@@ -8,7 +8,7 @@ const Header = () => {
           <span>Скидка на заказ 300 ₽ по промокоду</span>
           <button className={s.promo}>REFERAT300</button>
           <button className={s.btn}>Применить промокод</button>
-          <span>успей до 1 мая 🔥</span>
+          <span className={s.spans}>успей до 1 мая 🔥</span>
         </div>
       </header>
     </div>

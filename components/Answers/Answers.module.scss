@@ -3,45 +3,177 @@
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
 
   .answer_card {
-  width: 100%;
-  // height: 200px;
-  .answer__card_title {
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 50px;
-    text-align: center;
-    
-    color: #0D1D4A;
-    
+    width: 100%;
+    // height: 200px;
+    .answer__card_title {
+      font-family: "Circe";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 45px;
+      line-height: 50px;
+      text-align: center;
+
+      color: #0d1d4a;
+    }
+  }
+  .answer__sm_card {
+    display: flex;
+    justify-content: space-between;
+    .answer__sm_card_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-family: "Circe";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #0d1d4a;
+    }
   }
 }
+
 .answer__sm_card {
+  width: 100%;
+
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  // border: 1px solid black;
   .answer__sm_card_info {
+    width: 20%;
+    height: 160px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+
+    // border: 1px solid black;
+    h1 {
+      text-align: center;
+    }
   }
-  h1 {
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    color: #0D1D4A;
+}
+@media screen and (max-width: 1060px) {
+  .answer__sm_card_info {
+    width: 25% !important;
+  }
+}
+@media screen and (max-width: 900px) {
+  .answer__sm_card_info {
+    width: 20% !important;
+    h1 {
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .answer_card {
+    .answer__card_title {
+      padding-top: 200px;
+    }
+  }
+  .answer__sm_card_info {
+    width: 33.3% !important;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  .answer_card {
+    .answer__card_title {
+      padding-top: 230px;
+      font-size: 30px;
+    }
+  }
+  .answer__sm_card {
+    .answer__sm_card_info {
+      width: 33.3% !important;
+      margin: 0 auto;
+
+      img {
+        width: 50%;
+        height: 50%;
+      }
+      h1 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .answer_card {
+    .answer__card_title {
+      padding-top: 330px;
+      font-size: 30px;
+    }
   }
 
+  .answer__sm_card {
+    .answer__sm_card_info {
+      width: 33.3% !important;
+      margin: 0 auto;
+      img {
+        width: 50%;
+        height: 50%;
+      }
+      h1 {
+        font-size: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+
+  .answer_card {
+    .answer__card_title {
+      padding-top: 30px;
+      font-size: 30px;
+    }
+  }
+  .answer__sm_card {
+    .answer__sm_card_info {
+      width: 33.3% !important;
+      margin: 0 auto;
+      img {
+        width: 45%;
+        height: 45%;
+      }
+      h1 {
+        font-size: 8px;
+      }
+    }
+  }
 }
 
-}
-
-
-
+// @media screen and (max-width: 360px) {
+//   .answer {
+//     .answer_card {
+//       .answer__card_title {
+//         font-size: 30px;
+//       }
+//     }
+//     .answer__sm_card {
+//       .answer__sm_card_info {
+//         display: flex;
+//         justify-content: space-around;
+//         width: 80px;
+//         height: 200px;
+//         h1 {
+//           font-size: 10px;
+//         }
+//         img {
+//           width: 50%;
+//         }
+//       }
+//     }
+//   }
+// }

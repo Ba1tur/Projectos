@@ -11,9 +11,51 @@ const Answers = () => {
           </div>
           <div className={s.answer__sm_card}>
             <div className={s.answer__sm_card_info}>
-              <img src="/answers-notebook.png" alt="notebook" />
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
               <h1>Автореферат к кандидатской диссертации</h1>
             </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+            <div className={s.answer__sm_card_info}>
+              <img style={{width: '100px'}} src="/answers-notebook.png" alt="notebook" />
+              <h1>Автореферат к кандидатской диссертации</h1>
+            </div>
+          </div>
+
+
+
+          {/* <div className={s.answer__sm_card}>
+           
             <div className={s.answer__sm_card_info}>
               <img src="/answers-book.png" alt="book" />
               <h1>Автореферат к кандидатской диссертации</h1>
@@ -52,7 +94,7 @@ const Answers = () => {
               <img src="/answers-notebook.png" alt="notebook" />
               <h1>Автореферат к кандидатской диссертации</h1>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
