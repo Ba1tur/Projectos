@@ -5,6 +5,11 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
+import Image from "next/image";
+import dots from "../../public/Dots.png"
+import waves from "../../public/Waves.png"
+import video from "../../public/video.png"
+import pause from "../../public/pause.png"
 
 const Reviews = () => {
   return (
@@ -16,10 +21,10 @@ const Reviews = () => {
           </div>
           <div className={s.reviews_background_elements}>
             <div className={s.background_left_element}>
-              <img src="/Dots.png" alt="dots" />
+              <Image src={dots} alt="dots" />
             </div>
             <div className={s.background_right_element}>
-              <img src="/Waves.png" alt="waves" />
+              <Image src={waves} alt="waves" />
             </div>
           </div>
           <div className={s.reviews_swiper}>
@@ -86,9 +91,9 @@ const Reviews = () => {
               {" "}
               <SwiperSlide>
                 <div className={s.reviews_video}>
-                  <img src="/video.png" alt="video" />
+                  <Image src={video} alt="video" />
                   <div className={s.reviews_pause_video}>
-                    <img src="/pause.png" alt="" />
+                    <Image src={pause} alt="" />
                     <p>
                       Автор24 помогает мне зарабатывать , не отвлекаясь от
                       учебного процесса

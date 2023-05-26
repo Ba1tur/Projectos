@@ -5,6 +5,11 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
+import Image from "next/image";
+import login from "../../public/login.png"
+import people from "../../public/people.png"
+import signs from "../../public/signs.png"
+import arrow from "../../public/arrow.png"
 
 const Work = () => {
   return (
@@ -83,19 +88,19 @@ const Work = () => {
                 {" "}
                 <SwiperSlide>
                   <div>
-                    <img src="/login.png" alt="login" />
+                    <Image src={login} alt="login" />
                     <p>Регистрируешься и описываешь, в чем нужна помощь</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div>
-                    <img src="/people.png" alt="people" />
+                    <Image src={people} alt="people" />
                     <p>Выбираешь эксперта</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div>
-                    <img src="/signs.png" alt="signs" />
+                    <Image src={signs} alt="signs" />
                     <p>Получаешь готовую работу и 20-дневную гарантию</p>
                   </div>
                 </SwiperSlide>
@@ -104,7 +109,7 @@ const Work = () => {
           </div>
         </div>
         <div className={s.work_img_info}>
-          <img src="/arrow.png" alt="your image" />
+          <Image src={arrow} alt="your image" />
         </div>
       </div>
     </div>

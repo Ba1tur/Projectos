@@ -5,6 +5,11 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { coursework } from "../../constans/Coursework";
+import Image from "next/image";
+import shield from "../../public/shield.png"
+import calendar from "../../public/Calendar.png"
+import leftCloud from "../../public/leftCloud.png"
+import rightCloud from "../../public/rightCloud.png"
 
 const Coursework = ({ name, price, img }) => {
   return (
@@ -94,7 +99,7 @@ const Coursework = ({ name, price, img }) => {
                     <div className={s.card_general_conditions}>
                       <div className={s.card_unique}>
                         <div>
-                          <img src="/shield.png" alt="shield" />
+                          <Image src={shield} alt="shield" />
                         </div>
                         <div className={s.card_unique_titles}>
                           <p>Уникальность</p>
@@ -103,7 +108,7 @@ const Coursework = ({ name, price, img }) => {
                       </div>
                       <div className={s.card_calendar}>
                         <div>
-                          <img src="/Calendar.png" alt="Calendar" />
+                          <Image src={calendar} alt="Calendar" />
                         </div>
                         <div className={s.card_calendar_titles}>
                           <p>Срок выполнения</p>
@@ -114,7 +119,7 @@ const Coursework = ({ name, price, img }) => {
                     <div className={s.card_author_price}>
                       <div className={s.card_author_name}>
                         <div>
-                          <img src={item.img} alt="author" />
+                          <Image src={item.img} width={35} height={35} alt="author" />
                         </div>
                         <div className={s.card_name}>
                           <p>Эксперт</p>
@@ -133,10 +138,10 @@ const Coursework = ({ name, price, img }) => {
         </div>
         <div className={s.course_work_clouds}>
           <div className={s.course_left_cloud}>
-            <img src="/leftCloud.png" alt="leftCloud" />
+            <Image src={leftCloud} alt="leftCloud" />
           </div>
           <div className={s.course_right_cloud}>
-            <img src="/rightCloud.png" alt="rightCloud" />
+            <Image src={rightCloud} alt="rightCloud" />
           </div>
         </div>
         <div className={s.course_work_btn}>
