@@ -28,4 +28,8 @@ button {
   background: none;
   border: none;
 }
-
+.azer_section {
+  width: 100%;
+  height: 100vh;
+  background: #7D2AEB;
+}

@@ -13,7 +13,7 @@ const Answers = () => {
           </div>{" "}
           <div className={s.answer__sm_card}>
             {answers.map((answer) => (
-              <div className={s.answer__sm_card_info}>
+              <div className={s.answer__sm_card__info}>
                 <Image
                   src={answer.img}
                   width={100}
