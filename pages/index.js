@@ -7,6 +7,7 @@ import Answers from '@/components/Answers/Answers'
 import Description from '@/components/Description/Description'
 import Prices from '@/components/Prices/Prices'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,10 +19,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Questions/>
+      {/* <Questions/> */}
       <Answers/>
-      <Description/>
-      <Prices/>
+      {/* <Description/> */}
+      {/* <Prices/> */}
     </>
   )
 }

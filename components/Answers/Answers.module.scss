@@ -1,67 +1,49 @@
 .answer {
   display: flex;
   flex-direction: column;
+
   justify-content: space-around;
   width: 100%;
   height: 100vh;
 
-  .answer_card {
+  .answer__card {
     width: 100%;
-    // height: 200px;
+
     .answer__card_title {
       font-family: "Circe";
       font-style: normal;
       font-weight: 700;
-      font-size: 45px;
+      font-size: 40px;
       line-height: 50px;
       text-align: center;
-
       color: #0d1d4a;
     }
   }
   .answer__sm_card {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+
+    width: 100%;
+
     .answer__sm_card_info {
+      row-gap: 30px;
+      width: 20%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+
       align-items: center;
-    }
-    h1 {
-      font-family: "Circe";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 22px;
-      text-align: center;
-      color: #0d1d4a;
+      h1 {
+        text-align: center;
+        font-size: 16px;
+        padding-bottom: 30px;
+      }
     }
   }
 }
 
-.answer__sm_card {
-  width: 100%;
-
-  display: flex;
-  flex-wrap: wrap;
-  // border: 1px solid black;
-  .answer__sm_card_info {
-    width: 20%;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    // border: 1px solid black;
-    h1 {
-      text-align: center;
-    }
-  }
-}
 @media screen and (max-width: 1060px) {
   .answer__sm_card_info {
-    width: 25% !important;
+    width: 20% !important;
   }
 }
 @media screen and (max-width: 900px) {
@@ -73,13 +55,8 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .answer_card {
-    .answer__card_title {
-      padding-top: 200px;
-    }
-  }
   .answer__sm_card_info {
-    width: 33.3% !important;
+    width: 20% !important;
     margin: 0 auto;
 
     h1 {
@@ -88,7 +65,7 @@
   }
 }
 @media screen and (max-width: 640px) {
-  .answer_card {
+  .answer__card {
     .answer__card_title {
       padding-top: 230px;
       font-size: 30px;
@@ -96,13 +73,9 @@
   }
   .answer__sm_card {
     .answer__sm_card_info {
-      width: 33.3% !important;
+      width: 28% !important;
       margin: 0 auto;
 
-      img {
-        width: 50%;
-        height: 50%;
-      }
       h1 {
         font-size: 12px;
       }
@@ -110,7 +83,7 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .answer_card {
+  .answer__card {
     .answer__card_title {
       padding-top: 330px;
       font-size: 30px;
@@ -132,48 +105,20 @@
   }
 }
 @media screen and (max-width: 360px) {
-
-  .answer_card {
+  .answer__card {
     .answer__card_title {
-      padding-top: 30px;
-      font-size: 30px;
-    }
-  }
-  .answer__sm_card {
-    .answer__sm_card_info {
-      width: 33.3% !important;
-      margin: 0 auto;
-      img {
-        width: 45%;
-        height: 45%;
-      }
-      h1 {
-        font-size: 8px;
+      padding-top: 300px;
+
+      .answer__sm_card {
+        .answer__sm_card_info {
+          width: 33.3% !important;
+          margin: 0 auto;
+
+          h1 {
+            font-size: 10px !important;
+          }
+        }
       }
     }
   }
 }
-
-// @media screen and (max-width: 360px) {
-//   .answer {
-//     .answer_card {
-//       .answer__card_title {
-//         font-size: 30px;
-//       }
-//     }
-//     .answer__sm_card {
-//       .answer__sm_card_info {
-//         display: flex;
-//         justify-content: space-around;
-//         width: 80px;
-//         height: 200px;
-//         h1 {
-//           font-size: 10px;
-//         }
-//         img {
-//           width: 50%;
-//         }
-//       }
-//     }
-//   }
-// }
