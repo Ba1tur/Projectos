@@ -7,6 +7,10 @@ html {
   box-sizing: inherit;
 }
 
+.header_background {
+  background: #0D1D4A;
+}
+
 .reviews_background {
   z-index: 1;
   background-color: #7D2AEB;
