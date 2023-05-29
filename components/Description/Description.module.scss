@@ -68,3 +68,32 @@
     }
   }
 }
+
+@media screen and (max-width: 640px) {
+  .description {
+    padding-top: 250px;
+   
+  }
+}
+@media screen and (max-width: 480px) {
+  
+  .description {
+    .description_card {
+    h1 {
+    
+      font-size: 20px;
+      
+    }
+  }
+  }
+  .description__md_card {
+    display: flex;
+    flex-direction: column;
+    width: 81%;
+    margin: 0 auto;
+    .description__md_card_boxs {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+}

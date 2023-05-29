@@ -59,16 +59,7 @@ export const azer = [
     title: "Курсовая работа",
     avatar: "K"
   },
-  {
-    id: 13,
-    title: "Курсовая работа",
-    avatar: "K"
-  },
-  {
-    id: 14,
-    title: "Курсовая работа",
-    avatar: "K"
-  },
+  
   
 ]
 

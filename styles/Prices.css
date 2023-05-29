@@ -26,11 +26,12 @@
 .panells .ant-collapse-header-text {
     color: white;
     display: flex;
+    font-size: 16px;
     
 }
 .panells svg {
   color: rgb(255, 255, 255);
-  
+
 }
 .panells .ant-collapse-content-box {
   border-radius: 15px;

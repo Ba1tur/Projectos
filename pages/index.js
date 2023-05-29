@@ -23,7 +23,7 @@ export default function Home() {
       {/* <Questions/> */}
       {/* <Answers/> */}
       {/* <Description/> */}
-      {/* <Prices/> */}
+      <Prices/>
       {<Azer/>}
     </>
   )

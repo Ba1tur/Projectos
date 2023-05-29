@@ -46,5 +46,22 @@
   }
 }
 @media screen and (max-width: 600px) {
-
+  .price {
+   
+    .price_title {
+    
+      font-size: 36px;
+      
+    }
+}
+}
+@media screen and (max-width: 480px) {
+  .price {
+   
+    .price_title {
+    
+      font-size: 26px;
+      
+    }
+}
 }
