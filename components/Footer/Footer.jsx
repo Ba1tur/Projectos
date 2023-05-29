@@ -12,75 +12,12 @@ import qiwi from "../../public/qiwi.png";
 import { about, directions, informations, support } from "@/constans/Footer";
 
 const Footer = () => {
+  const phoneNumber = "+88001000320";
+  const email = "support@author24.ru";
+
   return (
     <div className="container">
-      <div className={s.footer}>
-        <div className={s.footer_all}>
-          <div className={s.footer_all_contacts}>
-            <div className={s.all_contacts_number}>
-              <Link href="tel:+88001000320">8-800-100-03-20</Link>
-              <p>Работаем по будням с 10:00 до 20:00</p>
-              <Link href="support@author24.ru">support@author24.ru</Link>
-            </div>
-            <div className={s.all_contacts_app}>
-              <button>
-                <Image src={appStore} />
-              </button>
-              <button>
-                <Image src={googlePlay} />
-              </button>
-            </div>
-          </div>
-          <div>
-            {""}
-            {support.map((item) => (
-              <div>
-                <h4>{item.main}</h4>
-                <Link href="#">{item.title}</Link>
-              </div>
-            ))}
-          </div>
-          <div>
-            {""}
-            {informations.map((item) => (
-              <div>
-                <h4>{item.main}</h4>
-                <Link href="#">{item.title}</Link>
-              </div>
-            ))}
-          </div>
-          <div>
-            {""}
-            {directions.map((item) => (
-              <div>
-                <h4>{item.main}</h4>
-                <Link href="#">{item.title}</Link>
-              </div>
-            ))}
-          </div>
-          <div>
-            {""}
-            {about.map((item) => (
-              <div>
-                <h4>{item.main}</h4>
-                <Link href="#">{item.title}</Link>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className={s.footer_copyright}>
-          <div className={s.footer_copyright_title}>
-            <p>© 2012 — 2022 Avtor24 Все права защищены</p>
-          </div>
-          <div className={s.footer_copyright_img}>
-            <Image src={webMoney} />
-            <Image src={yandexMoney} />
-            <Image src={masterCard} />
-            <Image src={visa} />
-            <Image src={qiwi} />
-          </div>
-        </div>
-      </div>
+      
     </div>
   );
 };
