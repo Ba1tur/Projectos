@@ -1,16 +1,26 @@
 import React from "react";
 import s from "./Header.module.scss";
+
+
 const Header = () => {
   return (
-    <div>
-      <header className={s.header}>
-        <div className={s.header_intro}>
-          <span>Скидка на заказ 300 ₽ по промокоду</span>
-          <button className={s.promo}>REFERAT300</button>
-          <button className={s.btn}>Применить промокод</button>
-          <span className={s.spans}>успей до 1 мая 🔥</span>
+    <div className="header_background">
+      <div className="container">
+        <div className={s.header}>
+          <div className={s.header_elements}>
+            <div className={s.header_elements_title}>
+              <p>Скидка на заказ  300 ₽ по промокоду</p>
+            </div>
+            <div className={s.header_elements_btns}>
+              <button>REFERAT300</button>
+              <button>Применить <span>промокод</span></button>
+            </div>
+            <div className={s.header_elements_smtitle}>
+              <p>успей до 1 мая 🔥</p>
+            </div>
+          </div>
         </div>
-      </header>
+      </div>
     </div>
   );
 };
