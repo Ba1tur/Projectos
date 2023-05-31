@@ -88,7 +88,7 @@ const Reviews = () => {
                   slidesPerView:2,
                 },
                 520: {
-                  slidesPerView:1,
+                  slidesPerView:2,
                 },
                 420: {
                   slidesPerView: 1,

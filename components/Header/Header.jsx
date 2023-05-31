@@ -14,7 +14,7 @@ const Header = () => {
               <button>REFERAT300</button>
               <button>Применить <span>промокод</span></button>
             </div>
-            <div className={s.header_elements_smtitle}>
+            <div className={s.header_elements_emoji_title}>
               <p>успей до 1 мая 🔥</p>
             </div>
           </div>
