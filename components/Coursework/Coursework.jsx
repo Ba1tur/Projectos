@@ -87,7 +87,7 @@ const Coursework = () => {
             {" "}
             {coursework.map((item) => (
               <SwiperSlide>
-                <div className={s.course_work_card}>
+                <div key={coursework.id} className={s.course_work_card}>
                   <div className={s.course_card_titles}>
                     <p>Сегодня, 17:45</p>
                     <h3>

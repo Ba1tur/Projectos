@@ -24,7 +24,7 @@ const Work = () => {
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
-                freeMode={true}
+                // freeMode={true}
                 grabCursor
                 style={{
                   "--swiper-pagination-color": "#93A1C8",

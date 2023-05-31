@@ -12,7 +12,7 @@ const CourseworkOther = () => {
           <div className={s.suggestions_top_row}>
             {" "}
             {topRow.map((item) => (
-              <div className={s.suggestions_emoji_title}>
+              <div key={topRow.id} className={s.suggestions_emoji_title}>
                 <div className={s.suggestions_emoji}>
                   <p>{item.emoji}</p>
                 </div>
@@ -27,7 +27,7 @@ const CourseworkOther = () => {
           <div className={s.suggestions_bottom_row}>
             {" "}
             {bottomRow.map((item) => (
-              <div className={s.suggestions_emoji_title}>
+              <div key={bottomRow.id} className={s.suggestions_emoji_title}>
                 <div className={s.suggestions_emoji}>
                   <p>{item.emoji}</p>
                 </div>
