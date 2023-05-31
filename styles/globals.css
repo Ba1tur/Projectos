@@ -13,7 +13,6 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: normal;
 }
 
-
 .container{
   max-width: 1240px;
   width: 100%;
@@ -33,6 +32,6 @@ button {
   height: 100vh;
   background: #7D2AEB;
 }
-.header_background {
+.header {
   background: #0D1D4A;
 }

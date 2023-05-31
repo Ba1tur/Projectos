@@ -4,7 +4,7 @@ import s from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <div className="header_background">
+    <div className="header">
       <div className="container">
         <div className={s.header}>
           <div className={s.header_elements}>

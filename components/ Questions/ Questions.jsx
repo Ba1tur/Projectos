@@ -1,8 +1,13 @@
 import React from "react";
 import s from "./ Questions.module.scss";
 import { Collapse } from "antd";
+import noootebook from "../../public/question-notebook.png"
+import smiley from "../../public//question-smiley.png"
+import money from "../../public/question-money.png"
+import Image from "next/image";
 const { Panel } = Collapse;
 const textOne = `
+
 Для того, чтобы выбрать эксперта нужно зайти на страницу заказа и рядом со ставкой нажать кнопку ‘нанять’. Далее выбрать способ и тип оплаты и нажать кнопку ‘перейти к оплате’.
 После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
 `;
@@ -12,21 +17,21 @@ const textTwo = `После этого останется ввести данн�
 const Questions = () => {
   return (
 
-      <section className="container">
+      <div className="container">
         <div className={s.questions_main}>
           <div className={s.questions_card}>
             <h1 className={s.questions_title}>Гарантия, зачем она нужна?</h1>
 
             <div className={s.questions_box}>
               <div className={s.questions__boxes}>
-                <img src="/question-notebook.png" alt="notebook" />
+                <Image src={noootebook} alt="notebook" />
 
                 <p className={s.questions__boxes_title}>
                   Студент получает работу от Автора
                 </p>
               </div>
               <div className={s.questions__boxes}>
-                <img src="/question-smiley.png" alt="smiley" />
+                <Image src={smiley} alt="smiley" />
 
                 <p className={s.questions__boxes_titles}>
                   После доработок преподаватель принимает работу и студент
@@ -34,14 +39,15 @@ const Questions = () => {
                 </p>
               </div>
               <div className={s.questions__boxes}>
-                <img src="/question-money.png" alt="money" />
+                <Image src={money} alt="money" />
 
                 <p className={s.questions__boxes_title}>
                   И только после этого эксперт получит зарплату
                 </p>
               </div>
-              <div className={s.questions_decs}>
-                <div className={s.questions__decs}>
+
+              <div className={s.questions_left}>
+                <div className={s.questions_decs}>
                   <p>Техподдержка</p>
                   <p>Гарантия</p>
                   <p>Эксперт</p>
@@ -60,8 +66,8 @@ const Questions = () => {
                   <p>От 95%</p>
                   <p>Бесплатно</p>
                 </div>
-                <div className={s.questions_mark}>
-                  <p className={s.questions__mark_text}>
+                <div className={s.questions_decs}>
+                  <p className={s.questions_decs__text}>
                     <svg
                       width="10"
                       height="8"
@@ -160,8 +166,9 @@ const Questions = () => {
                     </svg>
                   </p>
                 </div>
-              </div>
             </div>
+            </div>
+            
           </div>
 
           <div className={s.questions_right}>
@@ -192,7 +199,7 @@ const Questions = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     
   );
 };

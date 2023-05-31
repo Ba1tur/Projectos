@@ -18,7 +18,7 @@
       height: 100%;
     }
   }
-  .description__sm_card {
+  .description__del_card {
     p {
       height: 100%;
       width: 81%;
@@ -31,7 +31,7 @@
       color: #0d1d4a;
     }
   }
-  .description__md_card {
+  .description__set_card {
     display: flex;
     justify-content: space-between;
     width: 81%;
@@ -58,7 +58,7 @@
         }
       }
     }
-    .description__md_card_boxs {
+    .description__set_card__tag {
       div {
         display: flex;
         flex-direction: column;
@@ -86,12 +86,12 @@
     }
   }
   }
-  .description__md_card {
+  .description__set_card {
     display: flex;
     flex-direction: column;
     width: 81%;
     margin: 0 auto;
-    .description__md_card_boxs {
+    .description__set_card__tag {
       padding-top: 40px;
       padding-bottom: 40px;
     }

@@ -9,7 +9,6 @@ const text = `
   it can be found as a welcome guest in many households across the world.
 `;
 const Prices = () => {
-  
   return (
     <section className="container">
       <div className={s.price}>
@@ -21,19 +20,10 @@ const Prices = () => {
           <div>
             <h4>Объем работы</h4>
             <h4>Срок выполнения</h4>
-           
           </div>
         </div>
         <Collapse  defaultActiveKey={['1']} ghost>
     <Panel className="panells" header="Гуманитарные " key="1">
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
       <p className="price__text">{text}</p>
       <p className="price__text">{text}</p>
       <p className="price__text">{text}</p>
