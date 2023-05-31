@@ -18,9 +18,9 @@ const Work = () => {
         <div className={s.work_how_title}>
           <h3>Как это работает</h3>
         </div>
-        <div className={s.work_img_title}>
-          <div className={s.work_images}>
-            <div className={s.work_info_img}>
+        <div className={s.work_all}>
+          <div className={s.work_all_swiper}>
+            <div className={s.all_swiper_titles_img}>
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -108,7 +108,7 @@ const Work = () => {
             </div>
           </div>
         </div>
-        <div className={s.work_img_info}>
+        <div className={s.work_backround_img}>
           <Image src={arrow} alt="your image" />
         </div>
       </div>

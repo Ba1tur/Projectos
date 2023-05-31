@@ -105,7 +105,7 @@ const Reviews = () => {
                 <div className={s.reviews_video}>
                   <Image src={video} alt="video" />
                   <div className={s.reviews_pause_video}>
-                    <Image src={pause} alt="" />
+                    <Image src={pause} alt="pauseBtn" />
                     <p>
                       Автор24 помогает мне зарабатывать , не отвлекаясь от
                       учебного процесса
@@ -115,9 +115,9 @@ const Reviews = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={s.reviews_video}>
-                  <img src="/video.png" alt="video" />
+                  <Image src={video} alt="video" />
                   <div className={s.reviews_pause_video}>
-                    <img src="/pause.png" alt="" />
+                  <Image src={pause} alt="pauseBtn" />
                     <p>
                       Автор24 помогает мне зарабатывать , не отвлекаясь от
                       учебного процесса
@@ -127,9 +127,9 @@ const Reviews = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={s.reviews_video}>
-                  <img src="/video.png" alt="video" />
+                <Image src={video} alt="video" />
                   <div className={s.reviews_pause_video}>
-                    <img src="/pause.png" alt="" />
+                  <Image src={pause} alt="pauseBtn" />
                     <p>
                       Автор24 помогает мне зарабатывать , не отвлекаясь от
                       учебного процесса
@@ -139,7 +139,7 @@ const Reviews = () => {
               </SwiperSlide>
             </Swiper>
           </div>
-          <div className={s.reviews_small_title}>
+          <div className={s.reviews_second_title}>
             <h3>Оставь заявку и выбери лучшего автора на основании отзывов</h3>
           </div>
           <div className={s.reviews_btn}>

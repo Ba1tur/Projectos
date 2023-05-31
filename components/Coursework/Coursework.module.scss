@@ -78,7 +78,7 @@
                     justify-content: first baseline;
                     padding: 15px 0;
 
-                    .card_unique_titles {
+                    div:nth-child(2) {
                         padding: 0 14px;
 
                         p {
@@ -103,7 +103,7 @@
                     display: flex;
                     align-items: center;
 
-                    .card_calendar_titles {
+                    div:nth-child(2) {
                         padding: 0 11px;
 
                         p {
@@ -131,7 +131,7 @@
                     align-items: center;
                     padding: 15px 0;
 
-                    .card_name {
+                    div:nth-child(2) {
                         padding: 0 10px;
 
                         p {

@@ -11,7 +11,7 @@ import calendar from "../../public/Calendar.png"
 import leftCloud from "../../public/leftCloud.png"
 import rightCloud from "../../public/rightCloud.png"
 
-const Coursework = ({ name, price, img }) => {
+const Coursework = () => {
   return (
     <div className="container">
       <div className={s.course_work}>
@@ -101,7 +101,7 @@ const Coursework = ({ name, price, img }) => {
                         <div>
                           <Image src={shield} alt="shield" />
                         </div>
-                        <div className={s.card_unique_titles}>
+                        <div>
                           <p>Уникальность</p>
                           <p>97%</p>
                         </div>
@@ -110,7 +110,7 @@ const Coursework = ({ name, price, img }) => {
                         <div>
                           <Image src={calendar} alt="Calendar" />
                         </div>
-                        <div className={s.card_calendar_titles}>
+                        <div>
                           <p>Срок выполнения</p>
                           <p>3 дня</p>
                         </div>
@@ -121,7 +121,7 @@ const Coursework = ({ name, price, img }) => {
                         <div>
                           <Image src={item.img} width={35} height={35} alt="author" />
                         </div>
-                        <div className={s.card_name}>
+                        <div>
                           <p>Эксперт</p>
                           <p>{item.name}</p>
                         </div>
