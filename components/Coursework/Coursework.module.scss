@@ -279,16 +279,59 @@
 }
 @media (max-width: 367px) {
     .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 18px;
+            }
+        }
         .course_work_cards {
             .course_work_card {
+                .course_card_titles {
+                    h3 {
+                        padding: 8px 0;
+                        font-size: 16px;
+                    }
+                }
                 .card_general_info {
                     flex-direction: column;
                     justify-content: center;
+                    .card_general_conditions {
+                        .card_unique {
+                           padding: 8px 0;
+                        }
+                    }
                     .card_author_price {
+                        .card_author_name {
+                            padding: 8px 0;
+                        }
                         .card_price {
                             display: flex;
                             justify-content: center;
                         }
+                    }
+                }
+            }
+        }
+        .course_work_clouds {
+            .course_left_cloud {
+                display: none;
+            }
+        }
+        .course_work_btn {
+            button {
+                padding: 10px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media (max-width: 336px) {
+    .course_work {
+        .course_work_cards {
+            .course_work_card {
+                .course_card_titles {
+                    h3 {
+                        font-size: 15px;
                     }
                 }
             }
