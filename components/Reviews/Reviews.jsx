@@ -6,16 +6,16 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
 import Image from "next/image";
-import dots from "../../public/Dots.png"
-import waves from "../../public/Waves.png"
-import video from "../../public/video.png"
-import pause from "../../public/pause.png"
+import dots from "../../public/Dots.png";
+import waves from "../../public/Waves.png";
+import video from "../../public/video.png";
+import pause from "../../public/pause.png";
 
 const Reviews = () => {
   return (
-    <div className="reviews_background">
+    <div className="reviews">
       <div className="container">
-        <div className={s.reviews}>
+        <div className={s.reviews_field}>
           <div className={s.rewievs_title}>
             <h4>Видео-отзывы</h4>
           </div>
@@ -85,10 +85,10 @@ const Reviews = () => {
                   slidesPerView: 2,
                 },
                 550: {
-                  slidesPerView:2,
+                  slidesPerView: 2,
                 },
                 520: {
-                  slidesPerView:2,
+                  slidesPerView: 2,
                 },
                 420: {
                   slidesPerView: 1,
@@ -117,7 +117,7 @@ const Reviews = () => {
                 <div className={s.reviews_video}>
                   <Image src={video} alt="video" />
                   <div className={s.reviews_pause_video}>
-                  <Image src={pause} alt="pauseBtn" />
+                    <Image src={pause} alt="pauseBtn" />
                     <p>
                       Автор24 помогает мне зарабатывать , не отвлекаясь от
                       учебного процесса
@@ -127,9 +127,9 @@ const Reviews = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className={s.reviews_video}>
-                <Image src={video} alt="video" />
+                  <Image src={video} alt="video" />
                   <div className={s.reviews_pause_video}>
-                  <Image src={pause} alt="pauseBtn" />
+                    <Image src={pause} alt="pauseBtn" />
                     <p>
                       Автор24 помогает мне зарабатывать , не отвлекаясь от
                       учебного процесса

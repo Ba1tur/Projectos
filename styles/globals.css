@@ -12,11 +12,11 @@ a {
   color: inherit;
 }
 
-.header_background {
+.header {
   background: #0D1D4A;
 }
 
-.reviews_background {
+.reviews {
   z-index: 1;
   background-color: #7D2AEB;
 }

@@ -6,10 +6,10 @@ import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { coursework } from "../../constans/Coursework";
 import Image from "next/image";
-import shield from "../../public/shield.png"
-import calendar from "../../public/Calendar.png"
-import leftCloud from "../../public/leftCloud.png"
-import rightCloud from "../../public/rightCloud.png"
+import shield from "../../public/shield.png";
+import calendar from "../../public/Calendar.png";
+import leftCloud from "../../public/leftCloud.png";
+import rightCloud from "../../public/rightCloud.png";
 
 const Coursework = () => {
   return (
@@ -37,19 +37,19 @@ const Coursework = () => {
             spaceBetween={20}
             breakpoints={{
               1520: {
-                slidesPerView: 3
+                slidesPerView: 3,
               },
               1420: {
-                slidesPerView: 3
+                slidesPerView: 3,
               },
               1320: {
-                slidesPerView: 3
+                slidesPerView: 3,
               },
               1220: {
-                slidesPerView: 3
+                slidesPerView: 3,
               },
               1166: {
-                slidesPerView: 3
+                slidesPerView: 3,
               },
 
               1165: {
@@ -119,7 +119,12 @@ const Coursework = () => {
                     <div className={s.card_author_price}>
                       <div className={s.card_author_name}>
                         <div>
-                          <Image src={item.img} width={35} height={35} alt="author" />
+                          <Image
+                            src={item.img}
+                            width={35}
+                            height={35}
+                            alt="author"
+                          />
                         </div>
                         <div>
                           <p>Эксперт</p>
