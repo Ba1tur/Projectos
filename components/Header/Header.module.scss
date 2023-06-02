@@ -3,15 +3,15 @@
     height: 100px;
     display: flex;
     align-items: center;
+    background-color: #0d1d4a;
     .header_elements {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-around;
         .header_elements_title {
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             p {
                 font-style: normal;
                 font-weight: 400;
@@ -48,9 +48,8 @@
             }
         }
         .header_elements_emoji_title {
-            width: 100%;
+            width: 75%;
             display: flex;
-            justify-content: center;
             p {
                 font-style: normal;
                 font-weight: 400;
@@ -164,6 +163,10 @@
 @media (max-width: 773px) {
     .header_field {
         .header_elements {
+            .header_elements_title {
+                width: 70%;
+                justify-content: center;
+            }
             .header_elements_btns {
                 button:nth-child(1) {
                     color: #ffd304;
@@ -180,10 +183,37 @@
         }
     }
 }
+
+@media (max-width: 614px) {
+    .header_field {
+        .header_elements {
+            .header_elements_btns {
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width: 541px) {
+    .header_field {
+        .header_elements {
+            .header_elements_btns {
+                width: 70%;
+            }
+        }
+    }
+}
+
 @media (max-width: 515px) {
     .header_field {
         .header_elements {
             flex-direction: column;
+            .header_elements_title {
+                width: 100%;
+            }
+            .header_elements_btns {
+                width: 100%;
+            }
         }
     }
 }
+

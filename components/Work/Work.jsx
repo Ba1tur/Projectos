@@ -6,10 +6,8 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import Image from "next/image";
-import login from "../../public/login.png"
-import people from "../../public/people.png"
-import signs from "../../public/signs.png"
 import arrow from "../../public/arrow.png"
+import { work } from "@/constans/Work";
 
 const Work = () => {
   return (
@@ -33,7 +31,7 @@ const Work = () => {
                 }}
                 autoplay={{
                   delay: 3000,
-                  disableOnInteraction: false,        
+                  disableOnInteraction: false,
                 }}
                 breakpoints={{
                   1520: {
@@ -89,30 +87,20 @@ const Work = () => {
                 modules={[Navigation, Pagination, Autoplay]}
               >
                 {" "}
-                <SwiperSlide>
-                  <div>
-                    <Image src={login} alt="login" />
-                    <p>Регистрируешься и описываешь, в чем нужна помощь</p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div>
-                    <Image src={people} alt="people" />
-                    <p>Выбираешь эксперта</p>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div>
-                    <Image src={signs} alt="signs" />
-                    <p>Получаешь готовую работу и 20-дневную гарантию</p>
-                  </div>
-                </SwiperSlide>
+                {work.map((item) => (
+                  <SwiperSlide>
+                    <div key={item.id}>
+                      <Image src={item.img} width={120} height={120} alt="login" />
+                      <p>{item.title}</p>
+                    </div>
+                  </SwiperSlide>
+                ))}
               </Swiper>
             </div>
           </div>
         </div>
         <div className={s.work_backround_img}>
-          <Image src={arrow} alt="your image" />
+          <Image src="/arrow.png" width={10000} height={10000} alt="your image" />
         </div>
       </div>
     </div>

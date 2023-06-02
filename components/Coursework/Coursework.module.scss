@@ -1,11 +1,11 @@
 .course_work {
-    height: 100vh;
+    height: 70vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
+    margin: 50px 0;
     .course_work_title {
         h4 {
             font-style: normal;
@@ -206,33 +206,50 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 816px) {
     .course_work {
-        .course_work_title {
+        .course_work_title {     
             h4 {
                 font-size: 40px;
             }
         }
     }
 }
-@media (max-width: 661px) {
+
+
+@media (max-width: 819px) {
     .course_work {
-        .course_work_title {
-            font-size: 35px;
+        .course_work_title {     
+            h4 {
+                font-size: 35px;
+            }
         }
     }
 }
-@media (max-width: 578px) {
+@media (max-width: 629px) {
     .course_work {
         .course_work_title {
-            font-size: 30px;
+            h4 {
+                font-size: 30px;
+            }
         }
     }
 }
-@media (max-width: 496px) {
+@media (max-width: 539px) {
     .course_work {
         .course_work_title {
-            font-size: 28px;
+            h4 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+@media (max-width: 503px) {
+    .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 25px;
+            }
         }
         .course_work_cards {
             .course_work_card {
@@ -245,10 +262,12 @@
         }
     }
 }
-@media (max-width: 462px) {
+@media (max-width: 449px) {
     .course_work {
         .course_work_title {
-            font-size: 25px;
+            h4 {
+                font-size: 22px;
+            }
         }
         .course_work_cards {
             .course_work_card {
@@ -270,17 +289,13 @@
 @media (max-width: 413px) {
     .course_work {
         .course_work_title {
-            font-size: 23px;
+            h4 {
+                font-size: 19px;
+            }
         }
     }
 }
-@media (max-width: 380px) {
-    .course_work {
-        .course_work_title {
-            font-size: 22px;
-        }
-    }
-}
+
 @media (max-width: 367px) {
     .course_work {
         .course_work_title {
@@ -329,8 +344,13 @@
         }
     }
 }
-@media (max-width: 336px) {
+@media (max-width: 324px) {
     .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 17px;
+            }
+        }
         .course_work_cards {
             .course_work_card {
                 .course_card_titles {

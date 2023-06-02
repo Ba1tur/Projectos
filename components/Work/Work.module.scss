@@ -1,18 +1,15 @@
 .work {
     width: 100%;
     height: 100%;
-
     .work_how_title {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 50px;
-
         h3 {
-            font-family: "Circe";
             font-style: normal;
             font-weight: 700;
-            font-size: 45px;
+            font-size: 35px;
             line-height: 50px;
             color: #0d1d4a;
         }

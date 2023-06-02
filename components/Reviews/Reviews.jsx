@@ -10,6 +10,7 @@ import dots from "../../public/Dots.png";
 import waves from "../../public/Waves.png";
 import video from "../../public/video.png";
 import pause from "../../public/pause.png";
+import { reviews } from "@/constans/Reviews";
 
 const Reviews = () => {
   return (
@@ -33,7 +34,6 @@ const Reviews = () => {
               "--swiper-pagination-color": "#93A1C8",
             }}
             grabCursor
-            loop
             speed={100}
             slidesPerView={3}
             navigation={true}
@@ -102,42 +102,17 @@ const Reviews = () => {
               className="reviewsSwiper"
             >
               {" "}
+              {reviews.map((item) => (
               <SwiperSlide>
                 <div className={s.reviews_video}>
-                  <Image src={video} alt="video" />
+                  <Image src={item.generalImg} width={300} height={300} alt="video" />
                   <div className={s.reviews_pause_video}>
-                    <Image src={pause} alt="pauseBtn" />
-                    <p>
-                      Автор24 помогает мне зарабатывать , не отвлекаясь от
-                      учебного процесса
-                    </p>
+                    <Image src={item.pauseImg} width={50} height={50} alt="pauseBtn" />
+                    <p>{item.title}</p>
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className={s.reviews_video}>
-                  <Image src={video} alt="video" />
-                  <div className={s.reviews_pause_video}>
-                    <Image src={pause} alt="pauseBtn" />
-                    <p>
-                      Автор24 помогает мне зарабатывать , не отвлекаясь от
-                      учебного процесса
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className={s.reviews_video}>
-                  <Image src={video} alt="video" />
-                  <div className={s.reviews_pause_video}>
-                    <Image src={pause} alt="pauseBtn" />
-                    <p>
-                      Автор24 помогает мне зарабатывать , не отвлекаясь от
-                      учебного процесса
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
+              ))}
             </Swiper>
           </div>
           <div className={s.reviews_second_title}>
