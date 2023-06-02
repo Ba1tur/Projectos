@@ -1,11 +1,11 @@
 .course_work {
-    height: 70vh;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin: 50px 0;
+    margin: 20px 0;
     .course_work_title {
         h4 {
             font-style: normal;
@@ -308,7 +308,7 @@
                 .course_card_titles {
                     h3 {
                         padding: 8px 0;
-                        font-size: 16px;
+                        font-size: 15px;
                     }
                 }
                 .card_general_info {

@@ -5,8 +5,6 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper";
-import Image from "next/image";
-import arrow from "../../public/arrow.png"
 import { work } from "@/constans/Work";
 
 const Work = () => {
@@ -90,7 +88,7 @@ const Work = () => {
                 {work.map((item) => (
                   <SwiperSlide>
                     <div key={item.id}>
-                      <Image src={item.img} width={120} height={120} alt="login" />
+                      <img src={item.img} alt="login" />
                       <p>{item.title}</p>
                     </div>
                   </SwiperSlide>
@@ -100,7 +98,7 @@ const Work = () => {
           </div>
         </div>
         <div className={s.work_backround_img}>
-          <Image src="/arrow.png" width={10000} height={10000} alt="your image" />
+          <img src="/arrow.png" alt="arrow" />
         </div>
       </div>
     </div>

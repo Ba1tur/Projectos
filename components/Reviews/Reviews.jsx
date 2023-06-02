@@ -5,27 +5,24 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Pagination, Autoplay, Navigation } from "swiper";
-import Image from "next/image";
-import dots from "../../public/Dots.png";
-import waves from "../../public/Waves.png";
-import video from "../../public/video.png";
-import pause from "../../public/pause.png";
 import { reviews } from "@/constans/Reviews";
 
 const Reviews = () => {
   return (
-    <div className="reviews">
       <div className="container">
-        <div className={s.reviews_field}>
+        <div className={s.reviews}>
+          <div className={s.reviews_background}>
+            <img src="/rewievsBackground.png" alt="" />
+          </div>
           <div className={s.rewievs_title}>
             <h4>Видео-отзывы</h4>
           </div>
           <div className={s.reviews_background_elements}>
             <div className={s.background_left_element}>
-              <Image src={dots} alt="dots" />
+              <img src="/dots.png" alt="dots" />
             </div>
             <div className={s.background_right_element}>
-              <Image src={waves} alt="waves" />
+              <img src="/waves.png" alt="waves" />
             </div>
           </div>
           <div className={s.reviews_swiper}>
@@ -59,10 +56,13 @@ const Reviews = () => {
                 },
 
                 1165: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
                 },
                 1065: {
-                  slidesPerView: 2,
+                  slidesPerView: 3,
+                },
+                1000: {
+                  slidesPerView: 3,
                 },
                 950: {
                   slidesPerView: 2,
@@ -89,7 +89,10 @@ const Reviews = () => {
                   slidesPerView: 2,
                 },
                 520: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
+                },
+                480: {
+                  slidesPerView: 1,
                 },
                 420: {
                   slidesPerView: 1,
@@ -99,15 +102,15 @@ const Reviews = () => {
                 },
               }}
               modules={[Navigation, Pagination, Autoplay]}
-              className="reviewsSwiper"
+              className="reviews_swiper"
             >
               {" "}
               {reviews.map((item) => (
               <SwiperSlide>
                 <div className={s.reviews_video}>
-                  <Image src={item.generalImg} width={300} height={300} alt="video" />
+                  <img src={item.generalImg} alt="video" />
                   <div className={s.reviews_pause_video}>
-                    <Image src={item.pauseImg} width={50} height={50} alt="pauseBtn" />
+                    <img src={item.pauseImg} alt="pauseBtn" />
                     <p>{item.title}</p>
                   </div>
                 </div>
@@ -123,7 +126,6 @@ const Reviews = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

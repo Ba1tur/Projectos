@@ -1,10 +1,7 @@
 .course_work_other {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
+    margin: 20px 0;
     .course_work_other_title {
         p {
             font-style: normal;
@@ -13,6 +10,7 @@
             line-height: 50px;
             text-align: center;
             color: #0d1d4a;
+            padding: 30px 0;
         }
     }
     .course_work_other_suggestions {
@@ -21,6 +19,7 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            padding: 30px 0;
             .suggestions_emoji_title {
                 max-width: 120px;
                 width: 100%;
