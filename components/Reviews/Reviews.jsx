@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Pagination } from "swiper";
+import { Pagination, Autoplay, Navigation } from "swiper";
 import Image from "next/image";
 import dots from "../../public/Dots.png";
 import waves from "../../public/Waves.png";
@@ -29,17 +29,18 @@ const Reviews = () => {
           </div>
           <div className={s.reviews_swiper}>
             <Swiper
-              slidesPerView={3}
-              spaceBetween={30}
-              freeMode={true}
-              grabCursor
-              loop
               style={{
-                "--swiper-pagination-color": "#FFFFFF",
-              }}
-              pagination={{
-                clickable: true,
-              }}
+              "--swiper-pagination-color": "#93A1C8",
+            }}
+            grabCursor
+            loop
+            speed={100}
+            slidesPerView={3}
+            navigation={true}
+            pagination={{
+              clickable: true,
+            }}
+            spaceBetween={20}
               breakpoints={{
                 1520: {
                   slidesPerView: 3,
@@ -97,7 +98,7 @@ const Reviews = () => {
                   slidesPerView: 1,
                 },
               }}
-              modules={[FreeMode, Pagination]}
+              modules={[Navigation, Pagination, Autoplay]}
               className="reviewsSwiper"
             >
               {" "}

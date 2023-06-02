@@ -1,15 +1,7 @@
-html {
+* {
   box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -21,11 +13,11 @@ a {
   background-color: #7D2AEB;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
+h1, h2, h3, h4, h5, h6, p, ol, ul, a {
+  font-size: 16px;
   font-weight: normal;
   font-family: sans-serif;
+  text-decoration: none;
 }
 
 .container {
@@ -35,10 +27,11 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   padding: 0 1% 0 1%;
 }
 
-ol, ul {
+li {
   list-style: none;
 }
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }

@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Pagination } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import Image from "next/image";
 import login from "../../public/login.png"
 import people from "../../public/people.png"
@@ -24,13 +24,16 @@ const Work = () => {
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
-                // freeMode={true}
-                grabCursor
                 style={{
                   "--swiper-pagination-color": "#93A1C8",
                 }}
+                navigation={true}
                 pagination={{
                   clickable: true,
+                }}
+                autoplay={{
+                  delay: 3000,
+                  disableOnInteraction: false,        
                 }}
                 breakpoints={{
                   1520: {
@@ -83,7 +86,7 @@ const Work = () => {
                     slidesPerView: 1,
                   },
                 }}
-                modules={[FreeMode, Pagination]}
+                modules={[Navigation, Pagination, Autoplay]}
               >
                 {" "}
                 <SwiperSlide>

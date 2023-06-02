@@ -7,16 +7,18 @@
     justify-content: space-around;
 
     .course_work_title {
-        font-style: normal;
-        font-weight: 700;
-        max-width: 800px;
-        font-size: 45px;
-        line-height: 50px;
-        text-align: center;
-        color: #0d1d4a;
+        h4 {
+            font-style: normal;
+            font-weight: 700;
+            max-width: 800px;
+            font-size: 45px;
+            line-height: 50px;
+            text-align: center;
+            color: #0d1d4a;
 
-        span {
-            color: #7d2aeb;
+            span {
+                color: #7d2aeb;
+            }
         }
     }
 
@@ -207,7 +209,9 @@
 @media (max-width: 768px) {
     .course_work {
         .course_work_title {
-            font-size: 40px;
+            h4 {
+                font-size: 40px;
+            }
         }
     }
 }

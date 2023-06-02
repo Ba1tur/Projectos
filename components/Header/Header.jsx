@@ -3,8 +3,7 @@ import s from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <div className="header">
-      <div className="container">
+    <div className={s.header}>
         <div className={s.header_field}>
           <div className={s.header_elements}>
             <div className={s.header_elements_title}>
@@ -21,7 +20,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
