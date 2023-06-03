@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./Footer.module.scss";
 import Link from "next/link";
+import Image from "next/image";
 import {
   about,
   directions,
@@ -25,10 +26,10 @@ const Footer = () => {
             </div>
             <div className={s.contacts_app_btns}>
               <button>
-                <img src="/appStore.png" alt="appStore" />
+                <Image src="/appStore.png" width={110} height={50} alt="appStore" />
               </button>
               <button>
-                <img src="/googlePlay.png" alt="googlePlay" />
+                <Image src="/googlePlay.png" width={110} height={50} alt="googlePlay" />
               </button>
             </div>
           </div>
@@ -84,7 +85,7 @@ const Footer = () => {
           <div className={s.footer_copyright_payments}>
             {payments.map((item) => (
               <div>
-                <img key={item.id} src={item.img} alt="payments" />
+                <Image key={item.id} src={item.img} width={50} height={25} alt="payments" />
               </div>
             ))}
           </div>

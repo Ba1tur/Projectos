@@ -6,23 +6,24 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Pagination, Autoplay, Navigation } from "swiper";
 import { reviews } from "@/constans/Reviews";
+import Image from "next/image";
 
 const Reviews = () => {
   return (
       <div className="container">
         <div className={s.reviews}>
           <div className={s.reviews_background}>
-            <img src="/rewievsBackground.png" alt="" />
+            <Image src="/rewievsBackground.png" width={1924} height={752} alt="" />
           </div>
           <div className={s.rewievs_title}>
             <h4>Видео-отзывы</h4>
           </div>
           <div className={s.reviews_background_elements}>
             <div className={s.background_left_element}>
-              <img src="/dots.png" alt="dots" />
+              <Image src="/dots.png" width={250} height={250} alt="dots" />
             </div>
             <div className={s.background_right_element}>
-              <img src="/waves.png" alt="waves" />
+              <Image src="/waves.png" width={250} height={150} alt="waves" />
             </div>
           </div>
           <div className={s.reviews_swiper}>
@@ -108,9 +109,9 @@ const Reviews = () => {
               {reviews.map((item) => (
               <SwiperSlide>
                 <div key={item.id} className={s.reviews_video}>
-                  <img src={item.generalImg} alt="video" />
+                  <Image src={item.generalImg} width={300} height={300} alt="video" />
                   <div className={s.reviews_pause_video}>
-                    <img src={item.pauseImg} alt="pauseBtn" />
+                    <Image src={item.pauseImg} width={40} height={40} alt="pauseBtn" />
                     <p>{item.title}</p>
                   </div>
                 </div>

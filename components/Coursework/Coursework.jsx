@@ -5,6 +5,7 @@ import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { coursework } from "../../constans/Coursework";
+import Image from "next/image";
 
 const Coursework = () => {
   return (
@@ -94,7 +95,7 @@ const Coursework = () => {
                     <div className={s.card_general_conditions}>
                       <div className={s.card_unique}>
                         <div>
-                          <img src="/shield.png" alt="shield" />
+                          <Image src="/shield.png" width={30} height={35} alt="shield" />
                         </div>
                         <div>
                           <p>Уникальность</p>
@@ -103,7 +104,7 @@ const Coursework = () => {
                       </div>
                       <div className={s.card_calendar}>
                         <div>
-                          <img src="calendar.png" alt="Calendar" />
+                          <Image src="/calendar.png" width={33} height={35} alt="Calendar" />
                         </div>
                         <div>
                           <p>Срок выполнения</p>
@@ -114,7 +115,7 @@ const Coursework = () => {
                     <div className={s.card_author_price}>
                       <div className={s.card_author_name}>
                         <div>
-                          <img src={item.img} alt="author"/>
+                          <Image src={item.img} width={30} height={30} alt="author"/>
                         </div>
                         <div>
                           <p>Эксперт</p>
@@ -133,10 +134,10 @@ const Coursework = () => {
         </div>
         <div className={s.course_work_clouds}>
           <div className={s.course_left_cloud}>
-            <img src="/leftCloud.png" alt="leftCloud" />
+            <Image src="/leftCloud.png" width={370} height={290} alt="leftCloud" />
           </div>
           <div className={s.course_right_cloud}>
-            <img src="/rightCloud.png" alt="rightCloud" />
+            <Image src="/rightCloud.png" width={370} height={290} alt="rightCloud" />
           </div>
         </div>
         <div className={s.course_work_btn}>
