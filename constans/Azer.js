@@ -1,4 +1,4 @@
-export const azer = [
+export const azers = [
   {
     id: 1,
     title: "Курсовая работа",

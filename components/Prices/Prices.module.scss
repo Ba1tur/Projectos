@@ -22,7 +22,7 @@
   .price__description {
     width: 90%;
     margin: 0 auto;
-    background:#9d53fd;
+    background: #9d53fd;
     border-radius: 16px;
     height: 84px;
     display: flex;
@@ -38,9 +38,7 @@
       width: 40%;
       display: flex;
       justify-content: space-between;
-
       h4 {
-        
         display: flex;
         justify-content: space-between;
       }
@@ -49,21 +47,15 @@
 }
 @media screen and (max-width: 600px) {
   .price {
-   
     .price_title {
-    
       font-size: 36px;
-      
     }
-}
+  }
 }
 @media screen and (max-width: 480px) {
   .price {
-   
     .price_title {
-    
       font-size: 26px;
-      
     }
-}
+  }
 }

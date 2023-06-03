@@ -1,12 +1,11 @@
 import React from "react";
 import s from "./Header.module.scss";
 
-
 const Header = () => {
   return (
     <div className="header">
+      <div className={s.header}>
       <div className="container">
-        <div className={s.header}>
           <div className={s.header_elements}>
             <div className={s.header_elements_title}>
               <p>Скидка на заказ  300 ₽ по промокоду</p>

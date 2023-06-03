@@ -4,9 +4,8 @@
   justify-content: space-around;
   row-gap: 30px;
   height: 100%;
-
   .description_card {
-    h1 {
+    h2 {
       width: 81%;
       margin: 0 auto;
       font-family: "Circe";
@@ -36,13 +35,13 @@
     justify-content: space-between;
     width: 81%;
     margin: 0 auto;
-
-    div {
+    h2 {
+      font-size: 20px;
+    }
+    .description__set_info {
       display: flex;
-      flex-direction: column;
-      row-gap: 23px;
-      
-
+      padding-top: 20px;
+      column-gap: 15px;
       p {
         display: flex;
         align-items: center;
@@ -51,19 +50,24 @@
         font-weight: 350;
         font-size: 16px;
         line-height: 24px;
-
         color: #0d1d4a;
-        svg {
-          margin-right: 15px;
-        }
       }
     }
     .description__set_card__tag {
-      div {
+      .description__set_card__info {
         display: flex;
-        flex-direction: column;
-        row-gap: 15px;
-        column-gap: 10px;
+        padding-top: 20px;
+        column-gap: 15px;
+        p {
+          display: flex;
+          align-items: center;
+          font-family: "Circe";
+          font-style: normal;
+          font-weight: 350;
+          font-size: 16px;
+          line-height: 24px;
+          color: #0d1d4a;
+        }
       }
     }
   }
@@ -72,28 +76,53 @@
 @media screen and (max-width: 640px) {
   .description {
     padding-top: 250px;
-   
   }
 }
-@media screen and (max-width: 480px) {
-  
+@media screen and (max-width: 550px) {
   .description {
     .description_card {
-    h1 {
-    
-      font-size: 20px;
-      
+      h1 {
+        font-size: 20px;
+      }
     }
-  }
   }
   .description__set_card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 81%;
     margin: 0 auto;
+    .description__set_card__box {
+      h2 {
+        font-size: 30px;
+      }
+      .description__set_info {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
     .description__set_card__tag {
+      // text-align: center;
       padding-top: 40px;
       padding-bottom: 40px;
+      h2 {
+        font-size: 32px;
+      }
+      .description__set_card__info {
+        p:nth-child(2) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .description {
+    .description_card {
+      h1 {
+        font-size: 20px;
+      }
     }
   }
 }

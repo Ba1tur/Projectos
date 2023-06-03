@@ -2,11 +2,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  row-gap: 70px;
-
-  
+  row-gap: 50px;
   .azer__title {
-    padding-top: 50px;
+    padding-top: 150px;
     text-align: center;
     font-family: "Circe";
     font-style: normal;
@@ -19,12 +17,11 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 100px;
+    row-gap: 70px;
     .azer__card_desc {
       display: flex;
       justify-content: center;
       align-items: center;
-
       .azer__card_set {
         width: 70px;
         height: 70px;
@@ -40,7 +37,7 @@
       p {
         color: #ffffff;
       }
-      h1 {
+      h2 {
         font-family: "Circe";
         font-style: normal;
         font-weight: 700;
@@ -63,9 +60,8 @@
         p {
           color: #ffffff;
         }
-        h1 {
+        h2 {
           font-size: 12px;
-          
         }
       }
     }
@@ -76,7 +72,6 @@
     .azer__title {
       font-size: 35px;
     }
-   
     .azer__card {
       .azer__card_desc {
         width: 16.66% !important;
@@ -84,9 +79,8 @@
         p {
           color: #ffffff;
         }
-        h1 {
+        h2 {
           font-size: 14px;
-          
         }
       }
     }
@@ -98,7 +92,6 @@
     .azer__title {
       font-size: 30px;
     }
-   
     .azer__card {
       .azer__card_desc {
         width: 25% !important;
@@ -106,11 +99,22 @@
         p {
           color: #ffffff;
         }
-        h1 {
+        h2 {
           font-size: 12px;
-          
         }
       }
+    }
+    .azer__card_desc:nth-child(9) {
+      display: none;
+    }
+    .azer__card_desc:nth-child(10) {
+      display: none;
+    }
+    .azer__card_desc:nth-child(11) {
+      display: none;
+    }
+    .azer__card_desc:nth-child(12) {
+      display: none;
     }
   }
 }
@@ -118,29 +122,32 @@
   .azer {
     .azer__title {
       font-size: 30px;
+      padding-top: 70px;
     }
-   
     .azer__card {
+      row-gap: 40px;
       .azer__card_desc {
         width: 33.3% !important;
         text-align: center;
         p {
           color: #ffffff;
         }
-        h1 {
+        h2 {
           font-size: 12px;
-          
         }
       }
     }
+    .azer__card_desc:nth-child(9) {
+      display: block;
+    }
     .azer__card_desc:nth-child(10) {
-     display: none;
+      display: none;
     }
     .azer__card_desc:nth-child(11) {
-     display: none;
+      display: none;
     }
     .azer__card_desc:nth-child(12) {
-     display: none;
+      display: none;
     }
   }
 }

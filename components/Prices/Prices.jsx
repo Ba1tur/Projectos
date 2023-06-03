@@ -12,14 +12,13 @@ const Prices = () => {
   return (
     <section className="container">
       <div className={s.price}>
-        <h1 className={s.price_title}>Цены на написание работ</h1>
+        <h2 className={s.price_title}>Цены на написание работ</h2>
         <div className={s.price__description}>
           <div>
             <h3>Науки</h3>
           </div>
           <div>
             <h4>Объем работы</h4>
-            <h4>Срок выполнения</h4>
           </div>
         </div>
         <Collapse  defaultActiveKey={['1']} ghost>
