@@ -107,7 +107,7 @@ const Reviews = () => {
               {" "}
               {reviews.map((item) => (
               <SwiperSlide>
-                <div className={s.reviews_video}>
+                <div key={item.id} className={s.reviews_video}>
                   <img src={item.generalImg} alt="video" />
                   <div className={s.reviews_pause_video}>
                     <img src={item.pauseImg} alt="pauseBtn" />
