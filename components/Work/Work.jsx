@@ -21,6 +21,7 @@ const Work = () => {
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
+                loop
                 style={{
                   "--swiper-pagination-color": "#93A1C8",
                 }}
@@ -29,7 +30,7 @@ const Work = () => {
                   clickable: true,
                 }}
                 autoplay={{
-                  delay: 3000,
+                  delay: 2000,
                   disableOnInteraction: false,
                 }}
                 breakpoints={{

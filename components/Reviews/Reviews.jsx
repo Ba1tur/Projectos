@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { Pagination, Autoplay, Navigation } from "swiper";
+import { Pagination, Autoplay} from "swiper";
 import { reviews } from "@/constans/Reviews";
 import Image from "next/image";
 
@@ -29,12 +29,13 @@ const Reviews = () => {
           <div className={s.reviews_swiper}>
             <Swiper
               style={{
+               padingTop: '20px' ,
               "--swiper-pagination-color": "#93A1C8",
             }}
             grabCursor
             speed={100}
             slidesPerView={3}
-            navigation={true}
+            loop
             pagination={{
               clickable: true,
             }}
@@ -102,7 +103,7 @@ const Reviews = () => {
                   slidesPerView: 1,
                 },
               }}
-              modules={[Navigation, Pagination, Autoplay]}
+              modules={[ Pagination, Autoplay]}
               className="reviews_swiper"
             >
               {" "}

@@ -11,9 +11,6 @@ import {
 } from "@/constans/Footer";
 
 const Footer = () => {
-  const phoneNumber = "+88001000320";
-  const email = "support@author24.ru";
-
   return (
     <div className="container">
       <div className={s.footer}>
@@ -26,10 +23,20 @@ const Footer = () => {
             </div>
             <div className={s.contacts_app_btns}>
               <button>
-                <Image src="/appStore.png" width={110} height={50} alt="appStore" />
+                <Image
+                  src="/appStore.png"
+                  width={110}
+                  height={50}
+                  alt="appStore"
+                />
               </button>
               <button>
-                <Image src="/googlePlay.png" width={110} height={50} alt="googlePlay" />
+                <Image
+                  src="/googlePlay.png"
+                  width={110}
+                  height={50}
+                  alt="googlePlay"
+                />
               </button>
             </div>
           </div>
@@ -40,7 +47,9 @@ const Footer = () => {
               </div>
               <div className={s.footer_support_title}>
                 {support.map((item) => (
-                  <Link href="#" key={item.id}>{item.title}</Link>
+                  <Link href="#" key={item.id}>
+                    {item.title}
+                  </Link>
                 ))}
               </div>
             </div>
@@ -50,7 +59,9 @@ const Footer = () => {
               </div>
               <div className={s.footer_support_title}>
                 {informations.map((item) => (
-                  <Link href="#" key={item.id}>{item.title}</Link>
+                  <Link href="#" key={item.id}>
+                    {item.title}
+                  </Link>
                 ))}
               </div>
             </div>
@@ -62,7 +73,9 @@ const Footer = () => {
               </div>
               <div className={s.footer_support_title}>
                 {directions.map((item) => (
-                  <Link href="#" key={item.id}>{item.title}</Link>
+                  <Link href="#" key={item.id}>
+                    {item.title}
+                  </Link>
                 ))}
               </div>
             </div>
@@ -72,7 +85,9 @@ const Footer = () => {
               </div>
               <div className={s.footer_support_title}>
                 {about.map((item) => (
-                  <Link href="#" key={item.id}>{item.title}</Link>
+                  <Link href="#" key={item.id}>
+                    {item.title}
+                  </Link>
                 ))}
               </div>
             </div>
@@ -85,7 +100,13 @@ const Footer = () => {
           <div className={s.footer_copyright_payments}>
             {payments.map((item) => (
               <div>
-                <Image key={item.id} src={item.img} width={50} height={25} alt="payments" />
+                <Image
+                  key={item.id}
+                  src={item.img}
+                  width={50}
+                  height={25}
+                  alt="payments"
+                />
               </div>
             ))}
           </div>

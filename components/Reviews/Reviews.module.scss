@@ -50,6 +50,7 @@
     .reviews_swiper {
         z-index: 3;
         width: 100%;
+
         div {
             border-radius: 15px;
             position: relative;
@@ -198,6 +199,9 @@
             }
          }
     }
+}
+@media (max-width: 601) {
+    
 }
 @media (max-width: 578px) {
     .reviews{
