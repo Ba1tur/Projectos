@@ -95,7 +95,12 @@ const Coursework = () => {
                     <div className={s.card_general_conditions}>
                       <div className={s.card_unique}>
                         <div>
-                          <Image src="/shield.png" width={30} height={35} alt="shield" />
+                          <Image
+                            src="/shield.png"
+                            width={30}
+                            height={35}
+                            alt="shield"
+                          />
                         </div>
                         <div>
                           <p>Уникальность</p>
@@ -104,7 +109,12 @@ const Coursework = () => {
                       </div>
                       <div className={s.card_calendar}>
                         <div>
-                          <Image src="/calendar.png" width={33} height={35} alt="Calendar" />
+                          <Image
+                            src="/calendar.png"
+                            width={33}
+                            height={35}
+                            alt="Calendar"
+                          />
                         </div>
                         <div>
                           <p>Срок выполнения</p>
@@ -115,7 +125,12 @@ const Coursework = () => {
                     <div className={s.card_author_price}>
                       <div className={s.card_author_name}>
                         <div>
-                          <Image src={item.img} width={30} height={30} alt="author"/>
+                          <Image
+                            src={item.img}
+                            width={30}
+                            height={30}
+                            alt="author"
+                          />
                         </div>
                         <div>
                           <p>Эксперт</p>
@@ -134,10 +149,20 @@ const Coursework = () => {
         </div>
         <div className={s.course_work_clouds}>
           <div className={s.course_left_cloud}>
-            <Image src="/leftCloud.png" width={370} height={290} alt="leftCloud" />
+            <Image
+              src="/leftCloud.png"
+              width={370}
+              height={290}
+              alt="leftCloud"
+            />
           </div>
           <div className={s.course_right_cloud}>
-            <Image src="/rightCloud.png" width={370} height={290} alt="rightCloud" />
+            <Image
+              src="/rightCloud.png"
+              width={370}
+              height={290}
+              alt="rightCloud"
+            />
           </div>
         </div>
         <div className={s.course_work_btn}>

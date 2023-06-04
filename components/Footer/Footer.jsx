@@ -25,7 +25,7 @@ const Footer = () => {
               <button>
                 <Image
                   src="/appStore.png"
-                  width={110}
+                  width={130}
                   height={50}
                   alt="appStore"
                 />
@@ -33,7 +33,7 @@ const Footer = () => {
               <button>
                 <Image
                   src="/googlePlay.png"
-                  width={110}
+                  width={130}
                   height={50}
                   alt="googlePlay"
                 />
@@ -103,8 +103,8 @@ const Footer = () => {
                 <Image
                   key={item.id}
                   src={item.img}
-                  width={50}
-                  height={25}
+                  width={70}
+                  height={40}
                   alt="payments"
                 />
               </div>

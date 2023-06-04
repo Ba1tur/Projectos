@@ -200,8 +200,17 @@
          }
     }
 }
-@media (max-width: 601) {
-    
+@media (max-width: 601px) {
+    .reviews{
+        .rewievs_title {
+            padding-top: 25px;
+        }
+        .reviews_second_title {
+            h3 {
+                font-size: 18px;
+            }
+        }
+    }
 }
 @media (max-width: 578px) {
     .reviews{
@@ -246,12 +255,12 @@
     .reviews{
         .rewievs_title {
             h4 {
-                font-size: 24px;
+                font-size: 23px;
             }
         }
         .reviews_second_title {
             h3 {
-                font-size: 15px;
+                font-size: 14px;
             }
         }
         .reviews_btn {
@@ -262,16 +271,16 @@
          }
     }
 }
-@media (max-width: 413px) {
+@media (max-width: 420px) {
     .reviews{
         .rewievs_title {
             h4 {
-                font-size: 23px;
+                font-size: 22px;
             }
         }
         .reviews_second_title {
             h3 {
-                font-size: 15px;
+                font-size: 13px;
             }
         }
     }
@@ -285,8 +294,8 @@
         }
         .reviews_btn {
             button {
-                font-size: 14px;
-                padding: 20px 60px;
+                font-size: 13px;
+                padding: 12px 57px;
             }
         }
     }
