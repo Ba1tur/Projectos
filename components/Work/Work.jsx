@@ -85,6 +85,7 @@ const Work = () => {
                   },
                 }}
                 modules={[Navigation, Pagination, Autoplay]}
+                className="work_swiper"
               >
                 {" "}
                 {work.map((item) => (

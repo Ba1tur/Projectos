@@ -120,6 +120,12 @@
             letter-spacing: 1px;
             text-transform: uppercase;
             color: #ffffff;
+            transition: .3s;
+        }
+        button:hover {
+            background-color: #ff0998;
+            color: #e7e7e7;
+            transition: .3s;
         }
     }
 }

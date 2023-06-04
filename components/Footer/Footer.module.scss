@@ -32,6 +32,11 @@
                     font-size: 12px;
                     line-height: 16px;
                     color: #7d2aeb;
+                    transition: .3s;
+                }
+                a:hover {
+                    color: #661fc2;
+                    transition: .3s;
                 }
             }
             .contacts_app_btns {
@@ -47,16 +52,27 @@
                         object-fit: cover;
                     }
                 }
+                button:nth-child(1):hover {
+                    border: dashed 1px #f75db8;
+                    background-color: rgba(255, 209, 244, 0.5);
+                    transition: .3s;
+                }
                 button {
                     border: solid 1px #93a1c8;
                     border-radius: 4px;
                     padding: 8px;
+                    transition: .3s;
                     img {
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
                         object-position: center;
                     }
+                }
+                button:hover {
+                    border: solid 1px #f75db8;
+                    background-color: rgba(255, 209, 244, 0.5);
+                    transition: .3s;
                 }
             }
         }
@@ -88,6 +104,11 @@
                         font-size: 14px;
                         line-height: 18px;
                         color: #0d1d4a;
+                        transition: .3s;
+                    }
+                    a:hover {
+                        color: #f75db8;
+                        transition: .1s;
                     }
                 }
             }

@@ -33,6 +33,7 @@
                 line-height: 26px;
                 border-radius: 4px;
                 color: #f2eafd;
+                transition: .3s;
             }
             button:nth-child(2) {
                 background-color: #7d2aeb;
@@ -45,6 +46,17 @@
                 color: #ffffff;
                 border-radius: 4px;
                 cursor: pointer;
+                transition: .2s;
+            }
+            button:nth-child(1):hover {
+                background-color: #0e276b;
+                border: dashed 1px #F75DB8;
+                color: #F75DB8;
+                transition: .3s;
+            }
+            button:nth-child(2):hover {
+                background: #F75DB8;
+                transition: .2s;
             }
         }
         .header_elements_emoji_title {

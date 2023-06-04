@@ -202,6 +202,12 @@
             line-height: 23px;
             text-transform: uppercase;
             color: #ffffff;
+            transition: .2s;
+        }
+        button:hover {
+            background-color: #ff0998;
+            color: #e7e7e7;
+            transition: .3s;
         }
     }
 }
