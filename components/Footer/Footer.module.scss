@@ -35,7 +35,7 @@
                     transition: .3s;
                 }
                 a:hover {
-                    color: #661fc2;
+                    color: #f75db8;
                     transition: .3s;
                 }
             }
@@ -163,7 +163,16 @@
 @media (max-width: 1025px) {
     .footer {
         .footer_contacts {
-            .footer_contacts_supports {
+            .footer_contacts_supports:nth-child(2) {
+                
+                .footer_contacts_support {
+                    .footer_support_title {
+                        font-size: 13px;
+                    }
+                }
+            }
+            .footer_contacts_supports:nth-child(3) {
+                
                 .footer_contacts_support {
                     .footer_support_title {
                         font-size: 13px;
@@ -179,11 +188,12 @@
             .footer_contacts_supports {
                 width: 30%;
                 flex-direction: column;
+                justify-content: space-between;
                 .footer_contacts_support {
                     
                     .footer_support_main {
                         h3 {
-                            padding: 1% 0;
+                            padding: 2% 0;
                         }
                     }
                     .footer_support_title {
@@ -309,8 +319,22 @@
             .footer_contacts_app {
                 .contacts_app_navigation {
                     span {
-                        width: 57%;
-                        max-width: 170px;
+                        width: 59%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 464px) {
+    .footer {
+        .footer_contacts {
+            .footer_contacts_app {
+                .contacts_app_navigation {
+                    span {
+                        width: 56%;
                         text-align: center;
                     }
                 }
@@ -321,6 +345,16 @@
 
 @media (max-width: 438px) {
     .footer {
+        .footer_contacts {
+            .footer_contacts_app {
+                .contacts_app_navigation {
+                    span {
+                        width: 54%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
         .footer_copyright {
             .footer_copyright_payments {
                 .footer_copyright_title {
@@ -332,6 +366,22 @@
                     padding: 0 5px;
                     img {
                         width: 52px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 413px) {
+    .footer {
+        .footer_contacts {
+            .footer_contacts_app {
+                .contacts_app_navigation {
+                    span {
+                        width: 56%;
+                        max-width: 150px;
+                        text-align: center;
                     }
                 }
             }

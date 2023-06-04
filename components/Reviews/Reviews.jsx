@@ -34,10 +34,8 @@ const Reviews = () => {
         <div className={s.reviews_swiper}>
           <Swiper
             style={{
-              padingTop: "20px",
               "--swiper-pagination-color": "#93A1C8",
             }}
-            grabCursor
             speed={100}
             slidesPerView={3}
             loop
