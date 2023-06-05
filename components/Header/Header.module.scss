@@ -183,10 +183,22 @@
                 button:nth-child(1) {
                     color: #ffd304;
                     border: 1px dashed #ffd304;
+                    transition: .3s;
                 }
                 button:nth-child(2) {
                     background: #ffd304;
                     color: #0d1d4a;
+                    transition: .3s;
+                }
+                button:nth-child(1):hover {
+                    border: dashed 1px #ffd304;
+                    background-color: rgba(254, 255, 192, 0.5);
+                    color: #ffd304;
+                    transition: .3s;
+                }
+                button:nth-child(2):hover {
+                    background-color: #cfa900;
+                    transition: .3s;
                 }
             }
             .header_elements_emoji_title {
