@@ -2,11 +2,11 @@ import React from "react";
 import s from "./ Questions.module.scss";
 import { Collapse } from "antd";
 import Image from "next/image";
+import classnames from 'classnames'
 const { Panel } = Collapse;
 
 const Questions = () => {
   const textOne = `
-
 Для того, чтобы выбрать эксперта нужно зайти на страницу заказа и рядом со ставкой нажать кнопку ‘нанять’. Далее выбрать способ и тип оплаты и нажать кнопку ‘перейти к оплате’.
 После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
 `;
@@ -17,7 +17,6 @@ const Questions = () => {
       <div className={s.questions_main}>
         <div className={s.questions_card}>
           <h1 className={s.questions_title}>Гарантия, зачем она нужна?</h1>
-
           <div className={s.questions_boxes}>
             <div className={s.questions_box}>
               <Image src="/question-notebook.png" width={70} height={70} alt="notebook" />
@@ -40,7 +39,6 @@ const Questions = () => {
                 И только после этого эксперт получит зарплату
               </p>
             </div>
-
             <div className={s.questions_left}>
               <div className={s.questions_decs}>
                 <p>Техподдержка</p>
@@ -165,7 +163,7 @@ const Questions = () => {
           </div>
         </div>
 
-        <div className={s.questions_right}>
+        <div className={classnames(s.questions_right, 'main_scrollbare')} >
           <h2 className={s.questions__right_title}>Частые вопросы</h2>
           <div className={s.questions__right_box}>
             <div className={s.questions__right_boxs}>
