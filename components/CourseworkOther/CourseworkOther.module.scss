@@ -114,6 +114,13 @@
             }
         }
         .course_work_other_suggestions {
+            .suggestions_top_row {
+                gap: 20px;
+                .suggestions_emoji_title {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
             .suggestions_bottom_row {
                 display: none;
             }
