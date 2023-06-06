@@ -1,0 +1,42 @@
+.ant-collapse {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+
+}
+.panells .ant-collapse-header{
+  background:#9d53fd;
+  border-radius: 10px;
+  margin-top: 50px;
+  
+}
+.price__text {
+  background:#9d53fd;
+  color: white;
+  width: 100%;
+  /* height: 50%; */
+  font-size: 13px;
+  /* text-align: center; */
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 10px ;
+
+}
+.panells .ant-collapse-header-text {
+    color: white;
+    display: flex;
+    font-size: 16px;
+    
+}
+.panells svg {
+  color: rgb(255, 255, 255);
+
+}
+.panells .ant-collapse-content-box {
+  border-radius: 15px;
+  background:#9d53fd; 
+  overflow-x: scroll;
+  height: 120px;
+}
