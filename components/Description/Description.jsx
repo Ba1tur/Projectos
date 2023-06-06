@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Description.module.scss";
-import { descriptions, ovals } from "@/constans/Description";
+import { descriptions, ovals } from "@/constans/description";
 import Image from "next/image";
 
 const Description = () => {

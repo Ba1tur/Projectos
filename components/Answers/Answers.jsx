@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Answers.module.scss";
-import { answers } from "@/constans/Answers";
+import { answers } from "@/constans/answers";
 import Image from "next/image";
 
 const Answers = () => {

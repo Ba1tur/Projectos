@@ -3,12 +3,13 @@ import s from "./Prices.module.scss";
 import { CaretRightOutlined } from "@ant-design/icons";
 import { Collapse } from 'antd';
 const { Panel } = Collapse;
-const text = `
+
+const Prices = () => {
+  const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
   it can be found as a welcome guest in many households across the world.
 `;
-const Prices = () => {
   return (
     <section className="container">
       <div className={s.price}>

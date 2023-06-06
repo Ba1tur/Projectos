@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Azer.module.scss";
-import {  azers } from "@/constans/Azer";
+import {  azers } from "@/constans/azer";
 
 
 const Azer = () => {
