@@ -43,6 +43,10 @@ const Reviews = () => {
               clickable: true,
             }}
             spaceBetween={20}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
             breakpoints={{
               1520: {
                 slidesPerView: 3,
