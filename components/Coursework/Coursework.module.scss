@@ -1,0 +1,370 @@
+.course_work {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+    .course_work_title {
+        h4 {
+            font-style: normal;
+            font-weight: 700;
+            max-width: 800px;
+            font-size: 45px;
+            line-height: 50px;
+            text-align: center;
+            color: #0d1d4a;
+
+            span {
+                color: #7d2aeb;
+            }
+        }
+    }
+
+    .course_work_cards {
+        width: 100%;
+
+        .course_work_card {
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0px 0px 15px rgba(13, 29, 74, 0.11);
+            border-radius: 15px;
+
+            .course_card_titles {
+                p {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 12px;
+                    letter-spacing: 0.416667px;
+                    text-transform: uppercase;
+                    color: #93a1c8;
+                }
+
+                h3 {
+                    font-style: normal;
+                    max-width: 390px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 26px;
+                    padding: 14px 0;
+                    color: #0d1d4a;
+                }
+
+                p:nth-child(2) {
+                    font-style: normal;
+                    font-weight: 350;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #93a1c8;
+                    background: #f1f4f9;
+                    border-radius: 14px;
+                    padding: 6px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .card_general_info {
+            display: flex;
+            justify-content: space-between;
+
+            .card_general_conditions {
+                display: flex;
+                flex-direction: column;
+
+                .card_unique {
+                    display: flex;
+                    align-items: center;
+                    justify-content: first baseline;
+                    padding: 15px 0;
+
+                    div:nth-child(2) {
+                        padding: 0 14px;
+
+                        p {
+                            font-style: normal;
+                            font-weight: 350;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #93a1c8;
+                        }
+
+                        p:nth-child(2) {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #0d1d4a;
+                        }
+                    }
+                }
+
+                .card_calendar {
+                    display: flex;
+                    align-items: center;
+
+                    div:nth-child(2) {
+                        padding: 0 11px;
+
+                        p {
+                            font-style: normal;
+                            font-weight: 350;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #93a1c8;
+                        }
+
+                        p:nth-child(2) {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #0d1d4a;
+                        }
+                    }
+                }
+            }
+
+            .card_author_price {
+                .card_author_name {
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 0;
+
+                    div:nth-child(2) {
+                        padding: 0 10px;
+
+                        p {
+                            font-style: normal;
+                            font-weight: 350;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #93a1c8;
+                        }
+
+                        p:nth-child(2) {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 13px;
+                            line-height: 16px;
+                            color: #0d1d4a;
+                        }
+                    }
+                }
+
+                .card_price {
+                    display: flex;
+                    align-items: center;
+
+                    h4 {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 32px;
+                        color: #0d1d4a;
+                    }
+                }
+            }
+        }
+    }
+
+    .course_work_clouds {
+        z-index: -1;
+        position: absolute;
+        margin: 0 auto;
+        width: 100%;
+
+        .course_left_cloud {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .course_right_cloud {
+            position: absolute;
+            right: 0;
+            top: 150px;
+            bottom: 0;
+        }
+    }
+
+    .course_work_btn {
+        button {
+            background: #f75db8;
+            border-radius: 27px;
+            padding: 15px;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 15px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #ffffff;
+            transition: .2s;
+        }
+        button:hover {
+            background-color: #ff0998;
+            color: #e7e7e7;
+            transition: .3s;
+        }
+    }
+}
+
+@media (max-width: 816px) {
+    .course_work {
+        .course_work_title {     
+            h4 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 819px) {
+    .course_work {
+        .course_work_title {     
+            h4 {
+                font-size: 35px;
+            }
+        }
+    }
+}
+@media (max-width: 629px) {
+    .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+@media (max-width: 539px) {
+    .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 28px;
+            }
+        }
+    }
+}
+@media (max-width: 503px) {
+    .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 25px;
+            }
+        }
+        .course_work_cards {
+            .course_work_card {
+                .course_card_titles {
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 449px) {
+    .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 22px;
+            }
+        }
+        .course_work_cards {
+            .course_work_card {
+                .course_card_titles {
+                    h3 {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .course_work_btn {
+            button {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    }
+}
+@media (max-width: 413px) {
+    .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+@media (max-width: 367px) {
+    .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 18px;
+            }
+        }
+        .course_work_cards {
+            .course_work_card {
+                .course_card_titles {
+                    h3 {
+                        padding: 8px 0;
+                        font-size: 15px;
+                    }
+                }
+                .card_general_info {
+                    flex-direction: column;
+                    justify-content: center;
+                    .card_general_conditions {
+                        .card_unique {
+                            padding: 8px 0;
+                        }
+                    }
+                    .card_author_price {
+                        .card_author_name {
+                            padding: 8px 0;
+                        }
+                        .card_price {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+        .course_work_clouds {
+            .course_left_cloud {
+                display: none;
+            }
+        }
+        .course_work_btn {
+            button {
+                padding: 10px;
+                font-size: 13px;
+            }
+        }
+    }
+}
+@media (max-width: 324px) {
+    .course_work {
+        .course_work_title {
+            h4 {
+                font-size: 17px;
+            }
+        }
+        .course_work_cards {
+            .course_work_card {
+                .course_card_titles {
+                    h3 {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

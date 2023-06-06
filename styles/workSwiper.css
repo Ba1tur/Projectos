@@ -1,0 +1,7 @@
+.work_swiper {
+    width: 100%;
+}
+
+.work_swiper .swiper-pagination {
+    display: none;
+}

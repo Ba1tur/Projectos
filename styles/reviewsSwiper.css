@@ -1,0 +1,14 @@
+.reviews_swiper {
+    width: 100%;
+}
+
+.reviews_swiper .swiper-pagination {
+    margin-top: 15px !important;
+    display: none;
+}
+
+@media screen and (max-width: 952px) {
+    .reviews_swiper .swiper-pagination {
+        display: block !important;
+    }
+}
