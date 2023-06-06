@@ -17,9 +17,9 @@ const Footer = () => {
         <div className={s.footer_contacts}>
           <div className={s.footer_contacts_app}>
             <div className={s.contacts_app_navigation}>
-              <Link href="#">8-800-100-03-20</Link>
+              <a href="#">8-800-100-03-20</a>
               <span>Работаем по будням с 10:00 до 20:00</span>
-              <Link href="#">support@author24.ru</Link>
+              <a href="#">support@author24.ru</a>
             </div>
             <div className={s.contacts_app_btns}>
               <button>

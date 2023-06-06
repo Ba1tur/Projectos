@@ -24,6 +24,7 @@ export const support = [
     title: "Вконтакте",
   },
 ];
+
 export const informations = [
   {
     id: 1,
@@ -50,6 +51,7 @@ export const informations = [
     title: "Справочники",
   },
 ];
+
 export const directions = [
   {
     id: 1,

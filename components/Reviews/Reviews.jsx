@@ -17,7 +17,7 @@ const Reviews = () => {
             src="/rewievsBackground.png"
             width={1924}
             height={752}
-            alt=""
+            alt="rewievsBackground"
           />
         </div>
         <div className={s.rewievs_title}>
