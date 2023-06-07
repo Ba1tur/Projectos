@@ -34,7 +34,17 @@
     }
   }
 }
+@media screen and (min-width: 1900px) {
+.answer__card_title {
+      margin-top: 190px;
+    }
+}
 
+@media screen and (min-width: 1440px) {
+  .answer {
+    height: 80vh;
+  }
+}
 @media screen and (max-width: 1060px) {
   .answer__del_card__info {
     width: 20% !important;
