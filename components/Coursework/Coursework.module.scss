@@ -213,6 +213,16 @@
     }
 }
         
+@media (max-width: 1900px) {
+    .course_work {
+        height: 70vh;
+    }
+}
+@media (max-width: 1580px) {
+    .course_work {
+        height: 100vh;
+    }
+}
 
 @media (max-width: 816px) {
     .course_work {

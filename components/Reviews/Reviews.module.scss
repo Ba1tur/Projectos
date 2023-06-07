@@ -129,8 +129,15 @@
     }
 }
 
+@media (max-width: 1900px) {
+    .reviews {
+        height: 85vh;
+    }
+}
+
 @media (max-width: 1310px) {
     .reviews{
+        height: 100vh;
         .reviews_background_elements {
             .background_left_element {
                 left: 0;
