@@ -9,19 +9,19 @@ import { Navigation, Pagination, Autoplay } from "swiper";
 import { work } from "@/constans/Work";
 import { motion } from "framer-motion";
 
-const textAnimation = {
-  hidden: {
-    y: -100,
-    opacity: 0,
-  },
-  visible: (custom) => ({
-    y: 0,
-    opacity: 1,
-    transition: { delay: custom * 0.2 },
-  }),
-};
-
 const Work = () => {
+  const textAnimation = {
+    hidden: {
+      y: -100,
+      opacity: 0,
+    },
+    visible: (custom) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.1 },
+    }),
+  };
+
   return (
     <div className="container">
       <div className={s.work}>
@@ -108,7 +108,7 @@ const Work = () => {
                   <SwiperSlide>
                     <motion.div
                       initial="hidden"
-                      transition={{ duration: 1.3 }}
+                      transition={{ duration: 0.9 }}
                       whileInView="visible"
                       variants={{
                         hidden: { scale: 0 },
