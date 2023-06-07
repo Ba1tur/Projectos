@@ -15,8 +15,8 @@ const textAnimation = {
     opacity: 0,
   },
   hiddenBottom: {
-    y: 50,
-    opacity: 0,
+    y: 30,
+    opacity: 2,
   },
   visible: (custom) => ({
     y: 0,
