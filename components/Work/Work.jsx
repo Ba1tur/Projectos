@@ -10,24 +10,25 @@ import { work } from "@/constans/Work";
 import { motion } from "framer-motion";
 
 const Work = () => {
-  const textAnimation = {
-    hidden: {
-      y: -100,
-      opacity: 0,
-    },
-    visible: (custom) => ({
-      y: 0,
-      opacity: 1,
-      transition: { delay: custom * 0.1 },
-    }),
-  };
-
   return (
     <div className="container">
       <div className={s.work}>
-        <motion.div initial="hidden" whileInView="visible">
+        <motion.div
+          layout
+          transition={{
+            opacity: 0,
+            layout: { duration: 0.8 },
+            duration: 0.8,
+          }}
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0.5 },
+            visible: { scale: 1 },
+          }}
+        >
           <div className={s.work_how_title}>
-            <motion.h3 variants={textAnimation}>Как это работает</motion.h3>
+            <h3>Как это работает</h3>
           </div>
         </motion.div>
         <div className={s.work_all}>
@@ -37,7 +38,7 @@ const Work = () => {
                 slidesPerView={3}
                 spaceBetween={30}
                 loop
-                speed={2500}
+                speed={1100}
                 style={{
                   "--swiper-pagination-color": "#93A1C8",
                 }}
@@ -108,7 +109,7 @@ const Work = () => {
                   <SwiperSlide>
                     <motion.div
                       initial="hidden"
-                      transition={{ duration: 0.9 }}
+                      transition={{ duration: 0.5 }}
                       whileInView="visible"
                       variants={{
                         hidden: { scale: 0 },

@@ -10,30 +10,39 @@ import { motion } from "framer-motion";
 
 const Coursework = () => {
   const textAnimation = {
-    hiddenTop: {
-      y: -100,
-      opacity: 0,
-    },
-    hiddenBottom: {
+    hidden: {
       y: 50,
       opacity: 0,
     },
     visible: (custom) => ({
       y: 0,
       opacity: 1,
-      transition: { delay: custom * 0.2 },
+      transition: { delay: custom * 1000 },
     }),
   };
 
   return (
     <div className="container">
       <div className={s.course_work}>
-        <motion.div initial="hiddenTop" whileInView="visible">
+        <motion.div
+          layout
+          transition={{
+            opacity: 0,
+            layout: { duration: 0.8 },
+            duration: 0.8,
+          }}
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0.5 },
+            visible: { scale: 1 },
+          }}
+        >
           <div className={s.course_work_title}>
-            <motion.h4 variants={textAnimation}>
+            <h4 variants={textAnimation}>
               Последние выполненые <span>курсовые работы</span> по{" "}
               <span>праву и юриспреденции</span>
-            </motion.h4>
+            </h4>
           </div>
         </motion.div>
         <div className={s.course_work_cards}>
@@ -43,7 +52,7 @@ const Coursework = () => {
             }}
             grabCursor
             loop
-            speed={2500}
+            speed={1500}
             slidesPerView={3}
             navigation={true}
             pagination={{
@@ -108,7 +117,7 @@ const Coursework = () => {
               <SwiperSlide>
                 <motion.div
                   initial="hidden"
-                  transition={{ duration: 1.6 }}
+                  transition={{ duration: 1 }}
                   whileInView="visible"
                   variants={{
                     hidden: { scale: 0.7 },
@@ -199,7 +208,7 @@ const Coursework = () => {
             />
           </div>
         </div>
-        <motion.div initial="hiddenBottom" whileInView="visible">
+        <motion.div initial="hidden" whileInView="visible">
           <div className={s.course_work_btn}>
             <motion.button variants={textAnimation}>
               Узнать стоимость своей работы

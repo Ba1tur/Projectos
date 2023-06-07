@@ -10,18 +10,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const textAnimation = {
-  hiddenTop: {
-    y: -50,
+  hidden: {
+    y: 40,
     opacity: 0,
   },
-  hiddenBottom: {
-    y: 70,
-    opacity: -4,
-  },
   visible: (custom) => ({
-    y: 0,
+    y: 10,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { delay: custom * 1000 },
   }),
 };
 
@@ -37,9 +33,22 @@ const Reviews = () => {
             alt="rewievsBackground"
           />
         </div>
-        <motion.div initial="hiddenTop" whileInView="visible">
+        <motion.div
+          layout
+          transition={{
+            opacity: 0,
+            layout: { duration: 0.8 },
+            duration: 0.8,
+          }}
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0.5 },
+            visible: { scale: 1 },
+          }}
+        >
           <div className={s.rewievs_title}>
-            <motion.h4 variants={textAnimation}>Видео-отзывы</motion.h4>
+            <h4>Видео-отзывы</h4>
           </div>
         </motion.div>
         <div className={s.reviews_background_elements}>
@@ -55,7 +64,7 @@ const Reviews = () => {
             style={{
               "--swiper-pagination-color": "#93A1C8",
             }}
-            speed={2500}
+            speed={1300}
             slidesPerView={3}
             loop
             pagination={{
@@ -138,7 +147,7 @@ const Reviews = () => {
               <SwiperSlide>
                 <motion.div
                   initial="hidden"
-                  transition={{ duration: 1.6 }}
+                  transition={{ duration: 1 }}
                   whileInView="visible"
                   variants={{
                     hidden: { scale: 0.7 },
@@ -167,14 +176,27 @@ const Reviews = () => {
             ))}
           </Swiper>
         </div>
-        <motion.div initial="hiddenBottom" whileInView="visible">
+        <motion.div
+          layout
+          transition={{
+            opacity: 0,
+            layout: { duration: 0.8 },
+            duration: 0.8,
+          }}
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0.5 },
+            visible: { scale: 1 },
+          }}
+        >
           <div className={s.reviews_second_title}>
-            <motion.h3 variants={textAnimation}>
+            <h3 variants={textAnimation}>
               Оставь заявку и выбери лучшего автора на основании отзывов
-            </motion.h3>
+            </h3>
           </div>
         </motion.div>
-        <motion.div initial="hiddenBottom" whileInView="visible">
+        <motion.div initial="hidden" whileInView="visible">
           <div className={s.reviews_btn}>
             <motion.button variants={textAnimation}>
               Разместить заказ
