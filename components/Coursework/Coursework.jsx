@@ -9,12 +9,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const textAnimation = {
-  hidden: {
-    x: 100,
+  hiddenTop: {
+    y: -100,
+    opacity: 0,
+  },
+  hiddenBottom: {
+    y: 50,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: { delay: custom * 0.2 },
   }),
@@ -24,13 +28,13 @@ const Coursework = () => {
   return (
     <div className="container">
       <div className={s.course_work}>
-      <motion.div initial="hidden" whileInView="visible">
-        <div className={s.course_work_title}>
-          <motion.h4 variants={textAnimation}>
-            Последние выполненые <span>курсовые работы</span> по{" "}
-            <span>праву и юриспреденции</span>
-          </motion.h4>
-        </div>
+        <motion.div initial="hiddenTop" whileInView="visible">
+          <div className={s.course_work_title}>
+            <motion.h4 variants={textAnimation}>
+              Последние выполненые <span>курсовые работы</span> по{" "}
+              <span>праву и юриспреденции</span>
+            </motion.h4>
+          </div>
         </motion.div>
         <div className={s.course_work_cards}>
           <Swiper
@@ -39,7 +43,7 @@ const Coursework = () => {
             }}
             grabCursor
             loop
-            speed={210}
+            speed={2500}
             slidesPerView={3}
             navigation={true}
             pagination={{
@@ -184,9 +188,11 @@ const Coursework = () => {
             />
           </div>
         </div>
-        <div className={s.course_work_btn}>
-          <button>Узнать стоимость своей работы</button>
-        </div>
+        <motion.div initial="hiddenBottom" whileInView="visible">
+          <div className={s.course_work_btn}>
+            <motion.button variants={textAnimation}>Узнать стоимость своей работы</motion.button>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -11,11 +11,11 @@ import { motion } from "framer-motion";
 
 const textAnimation = {
   hidden: {
-    x: -100,
+    y: -100,
     opacity: 0,
   },
   visible: (custom) => ({
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: { delay: custom * 0.2 },
   }),
@@ -37,7 +37,7 @@ const Work = () => {
                 slidesPerView={3}
                 spaceBetween={30}
                 loop
-                speed={210}
+                speed={2500}
                 style={{
                   "--swiper-pagination-color": "#93A1C8",
                 }}
