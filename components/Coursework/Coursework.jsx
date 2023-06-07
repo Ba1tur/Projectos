@@ -6,17 +6,32 @@ import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { coursework } from "../../constans/Coursework";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const textAnimation = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
 
 const Coursework = () => {
   return (
     <div className="container">
       <div className={s.course_work}>
+      <motion.div initial="hidden" whileInView="visible">
         <div className={s.course_work_title}>
-          <h4>
+          <motion.h4 variants={textAnimation}>
             Последние выполненые <span>курсовые работы</span> по{" "}
             <span>праву и юриспреденции</span>
-          </h4>
+          </motion.h4>
         </div>
+        </motion.div>
         <div className={s.course_work_cards}>
           <Swiper
             style={{
@@ -24,7 +39,7 @@ const Coursework = () => {
             }}
             grabCursor
             loop
-            speed={100}
+            speed={210}
             slidesPerView={3}
             navigation={true}
             pagination={{

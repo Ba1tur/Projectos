@@ -36,7 +36,7 @@ const Reviews = () => {
             style={{
               "--swiper-pagination-color": "#93A1C8",
             }}
-            speed={100}
+            speed={210}
             slidesPerView={3}
             loop
             pagination={{

@@ -7,14 +7,29 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { Navigation, Pagination, Autoplay } from "swiper";
 import { work } from "@/constans/Work";
+import { motion } from "framer-motion";
+
+const textAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
 
 const Work = () => {
   return (
     <div className="container">
       <div className={s.work}>
-        <div className={s.work_how_title}>
-          <h3>Как это работает</h3>
-        </div>
+        <motion.div initial="hidden" whileInView="visible">
+          <div className={s.work_how_title}>
+            <motion.h3 variants={textAnimation}>Как это работает</motion.h3>
+          </div>
+        </motion.div>
         <div className={s.work_all}>
           <div className={s.work_all_swiper}>
             <div className={s.all_swiper_titles_img}>
@@ -22,6 +37,7 @@ const Work = () => {
                 slidesPerView={3}
                 spaceBetween={30}
                 loop
+                speed={210}
                 style={{
                   "--swiper-pagination-color": "#93A1C8",
                 }}
