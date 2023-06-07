@@ -20,7 +20,9 @@ const CourseworkOther = () => {
       <div className={s.course_work_other}>
         <motion.div initial="hidden" whileInView="visible">
           <div className={s.course_work_other_title}>
-            <motion.p variants={textAnimation}>Курсовые работы по другим предметам</motion.p>
+            <motion.p variants={textAnimation}>
+              Курсовые работы по другим предметам
+            </motion.p>
           </div>
         </motion.div>
         <div className={s.course_work_other_suggestions}>

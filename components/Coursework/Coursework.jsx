@@ -106,14 +106,14 @@ const Coursework = () => {
             {" "}
             {coursework.map((item) => (
               <SwiperSlide>
-                <motion.div 
-                initial="hidden"
-                transition={{ duration: 1.6 }}
-                whileInView="visible"
-                variants={{
-                  hidden: { scale: 0 },
-                  visible: { scale: 1 },
-                }}
+                <motion.div
+                  initial="hidden"
+                  transition={{ duration: 1.6 }}
+                  whileInView="visible"
+                  variants={{
+                    hidden: { scale: 0.7 },
+                    visible: { scale: 1 },
+                  }}
                 >
                   <div key={coursework.id} className={s.course_work_card}>
                     <div className={s.course_card_titles}>

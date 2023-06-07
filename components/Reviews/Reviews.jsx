@@ -136,23 +136,33 @@ const Reviews = () => {
             {" "}
             {reviews.map((item) => (
               <SwiperSlide>
-                <div key={item.id} className={s.reviews_video}>
-                  <Image
-                    src={item.generalImg}
-                    width={300}
-                    height={300}
-                    alt="video"
-                  />
-                  <div className={s.reviews_pause_video}>
+                <motion.div
+                  initial="hidden"
+                  transition={{ duration: 1.6 }}
+                  whileInView="visible"
+                  variants={{
+                    hidden: { scale: 0.7 },
+                    visible: { scale: 1 },
+                  }}
+                >
+                  <div key={item.id} className={s.reviews_video}>
                     <Image
-                      src={item.pauseImg}
-                      width={40}
-                      height={40}
-                      alt="pauseBtn"
+                      src={item.generalImg}
+                      width={300}
+                      height={300}
+                      alt="video"
                     />
-                    <p>{item.title}</p>
+                    <div className={s.reviews_pause_video}>
+                      <Image
+                        src={item.pauseImg}
+                        width={40}
+                        height={40}
+                        alt="pauseBtn"
+                      />
+                      <p>{item.title}</p>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -166,7 +176,9 @@ const Reviews = () => {
         </motion.div>
         <motion.div initial="hiddenBottom" whileInView="visible">
           <div className={s.reviews_btn}>
-            <motion.button variants={textAnimation}>Разместить заказ</motion.button>
+            <motion.button variants={textAnimation}>
+              Разместить заказ
+            </motion.button>
           </div>
         </motion.div>
       </div>

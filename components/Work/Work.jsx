@@ -106,15 +106,25 @@ const Work = () => {
                 {" "}
                 {work.map((item) => (
                   <SwiperSlide>
-                    <div key={item.id}>
-                      <Image
-                        src={item.img}
-                        width={120}
-                        height={120}
-                        alt="login"
-                      />
-                      <p>{item.title}</p>
-                    </div>
+                    <motion.div
+                      initial="hidden"
+                      transition={{ duration: 1.3 }}
+                      whileInView="visible"
+                      variants={{
+                        hidden: { scale: 0 },
+                        visible: { scale: 1 },
+                      }}
+                    >
+                      <div key={item.id}>
+                        <Image
+                          src={item.img}
+                          width={120}
+                          height={120}
+                          alt="login"
+                        />
+                        <p>{item.title}</p>
+                      </div>
+                    </motion.div>
                   </SwiperSlide>
                 ))}
               </Swiper>
