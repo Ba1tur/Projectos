@@ -1,17 +1,31 @@
 import React from "react";
 import s from "./Prices.module.scss";
 import { CaretRightOutlined } from "@ant-design/icons";
-import { Collapse } from 'antd';
+import { Collapse } from "antd";
 const { Panel } = Collapse;
+import { motion } from "framer-motion";
 
 const Prices = () => {
+  const textAnimationBottom = {
+    hidden: {
+      y: 100,
+      opacity: 0,
+    },
+
+    visible: (custom) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.2 },
+    }),
+  };
+
   const text = `
   A dog is a type of domesticated animal.
   Known for its loyalty and faithfulness,
   it can be found as a welcome guest in many households across the world.
 `;
   return (
-    <section className="container">
+    <motion.section variants={textAnimationBottom} initial="hidden" whileInView="visible" className="container">
       <div className={s.price}>
         <h2 className={s.price_title}>Цены на написание работ</h2>
         <div className={s.price__description}>
@@ -22,25 +36,25 @@ const Prices = () => {
             <h4>Объем работы</h4>
           </div>
         </div>
-        <Collapse  defaultActiveKey={['1']} ghost>
-    <Panel className="panells" header="Гуманитарные " key="1">
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-      <p className="price__text">{text}</p>
-    </Panel>
-    <Panel className="panells" header="Гуманитарные " key="2">
-      <p className="price__text">{text}</p>
-    </Panel>
-    <Panel className="panells" header="Гуманитарные " key="3">
-      <p className="price__text">{text}</p>
-    </Panel>
-    <Panel className="panells" header="Гуманитарные " key="4">
-      <p className="price__text">{text}</p>
-    </Panel>
-  </Collapse>
+        <Collapse defaultActiveKey={["1"]} ghost>
+          <Panel className="panells" header="Гуманитарные " key="1">
+            <p className="price__text">{text}</p>
+            <p className="price__text">{text}</p>
+            <p className="price__text">{text}</p>
+            <p className="price__text">{text}</p>
+          </Panel>
+          <Panel className="panells" header="Гуманитарные " key="2">
+            <p className="price__text">{text}</p>
+          </Panel>
+          <Panel className="panells" header="Гуманитарные " key="3">
+            <p className="price__text">{text}</p>
+          </Panel>
+          <Panel className="panells" header="Гуманитарные " key="4">
+            <p className="price__text">{text}</p>
+          </Panel>
+        </Collapse>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

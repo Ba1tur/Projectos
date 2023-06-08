@@ -106,7 +106,7 @@ const Work = () => {
           </div>
         </div>
         <div className={s.work_backround_img}>
-          <Image src="/arrow.png" width={1924} height={126} alt="arrow" />
+          <Image src="/arrowpage.png" width={1924} height={126} alt="arrow" />
         </div>
       </div>
     </div>

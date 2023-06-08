@@ -2,8 +2,40 @@ import React from "react";
 import s from "./ Questions.module.scss";
 import { Collapse } from "antd";
 import Image from "next/image";
-import classnames from 'classnames'
+import classnames from "classnames";
 const { Panel } = Collapse;
+import { motion } from "framer-motion";
+
+const textAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.1}
+  }),
+};
+const textAnimationtop = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * .3}
+  }),
+};
 
 const Questions = () => {
   const textOne = `
@@ -13,34 +45,56 @@ const Questions = () => {
   const textTwo = `После этого останется ввести данные карты с которой планируется оплата и потом ввести код из смс на странице банка.
 `;
   return (
-    <div className="container">
+    <motion.div 
+    initial="hidden"
+    whileInView="visible"
+
+    className="container">
+
       <div className={s.questions_main}>
         <div className={s.questions_card}>
-          <h1 className={s.questions_title}>Гарантия, зачем она нужна?</h1>
+          <motion.h1 custom={1} variants={textAnimation} className={s.questions_title}>Гарантия, зачем она нужна?</motion.h1>
+
           <div className={s.questions_boxes}>
-            <div className={s.questions_box}>
-              <Image src="/question-notebook.png" width={70} height={70} alt="notebook" />
+            <motion.div custom={2} variants={textAnimation} className={s.questions_box}>
+              <Image
+                src="/question-notebook.png"
+                width={70}
+                height={70}
+                alt="notebook"
+              />
 
               <p className={s.questions_box__title}>
                 Студент получает работу от Автора
               </p>
-            </div>
-            <div className={s.questions_box}>
-              <Image src="/question-smiley.png" width={70} height={70} alt="smiley" />
+            </motion.div>
+            <motion.div custom={3} variants={textAnimation} className={s.questions_box}>
+              <Image
+                src="/question-smiley.png"
+                width={70}
+                height={70}
+                alt="smiley"
+              />
 
               <p className={s.questions_box__titles}>
                 После доработок преподаватель принимает работу и студент доволен
               </p>
-            </div>
-            <div className={s.questions_box}>
-              <Image src="/question-money.png" width={70} height={70} alt="money" />
+            </motion.div>
+            <motion.div custom={4} variants={textAnimation} className={s.questions_box}>
+              <Image
+                src="/question-money.png"
+                width={70}
+                height={70}
+                alt="money"
+              />
 
               <p className={s.questions_box__title}>
                 И только после этого эксперт получит зарплату
               </p>
-            </div>
-            <div className={s.questions_left}>
-              <div className={s.questions_decs}>
+            </motion.div>
+
+            <motion.div custom={5} variants={textAnimation} className={s.questions_left}>
+              <motion.div custom={9} variants={textAnimation} className={s.questions_decs}>
                 <p>Техподдержка</p>
                 <p>Гарантия</p>
                 <p>Эксперт</p>
@@ -48,9 +102,9 @@ const Questions = () => {
                 <p>Срок выполнения</p>
                 <p>Оригинальность</p>
                 <p>Доработки</p>
-              </div>
+              </motion.div>
 
-              <div className={s.questions_desc}>
+              <motion.div custom={8} variants={textAnimation}className={s.questions_desc}>
                 <p>24/7 </p>
                 <p>20 дней</p>
                 <p>выбираете сами</p>
@@ -58,8 +112,8 @@ const Questions = () => {
                 <p>для каждого типа свой</p>
                 <p>От 95%</p>
                 <p>Бесплатно</p>
-              </div>
-              <div className={s.questions_decs}>
+              </motion.div>
+              <motion.div custom={7} variants={textAnimation} className={s.questions_decs}>
                 <p className={s.questions_decs__text}>
                   <svg
                     width="10"
@@ -158,12 +212,12 @@ const Questions = () => {
                     />
                   </svg>
                 </p>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
 
-        <div className={classnames(s.questions_right, 'main_scrollbare')} >
+        <motion.div custom={1} variants={textAnimationtop} className={classnames(s.questions_right, "main_scrollbare")}>
           <h2 className={s.questions__right_title}>Частые вопросы</h2>
           <div className={s.questions__right_box}>
             <div className={s.questions__right_boxs}>
@@ -198,9 +252,9 @@ const Questions = () => {
               </Collapse>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

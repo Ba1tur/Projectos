@@ -2,19 +2,33 @@ import React from "react";
 import s from "./Description.module.scss";
 import { descriptions, ovals } from "@/constans/description";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Description = () => {
+  
+  const textAnimationTop = {
+    hidden: {
+      y: -150,
+      opacity: 0,
+    },
+
+    visible: (custom) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.3 },
+    }),
+  };
   return (
-    <div className="container">
+    <motion.div initial="hidden" whileInView="visible" className="container">
       <div className={s.description}>
         <div className={s.description_card}>
-          <h2>
+          <motion.h2 custom={1} variants={textAnimationTop}>
             Выполнение курсовых на заказ – качественные услуги опытных авторов
             по выгодным ценам
-          </h2>
+          </motion.h2>
         </div>
         <div className={s.description__del_card}>
-          <p>
+          <motion.p custom={2} variants={textAnimationTop}>
             Курсовые работы – большинство студентов боятся их, как огня. Ведь,
             не сдав вовремя курсовую работу или получив неудовлетворительную
             оценку, вы рискуете не попасть на следующий курс обучения. Никому не
@@ -41,9 +55,9 @@ const Description = () => {
             интернет-ресурсами, чертежами и т.д. Словом, если вас интересует
             выполнение курсовых на заказ, лучшие авторы и профессиональный
             сервис ждут именно здесь!
-          </p>
+          </motion.p>
         </div>
-        <div className={s.description__set_card}>
+        <motion.div custom={3} variants={textAnimationTop}  className={s.description__set_card}>
           <div className={s.description__set_card__box}>
             <h2>Маркированный список</h2>
             {descriptions.map((descriptions) => (
@@ -68,9 +82,9 @@ const Description = () => {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
