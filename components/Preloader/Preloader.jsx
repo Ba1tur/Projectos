@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import s from "./Preoader.module.scss";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const Preloader = () => {
@@ -40,35 +40,60 @@ const Preloader = () => {
     }
   }, [loading]);
 
-  return loading ? (
-    <div className={s.preloader}>
-      <div className={s.preloader_loader}></div>
-      <motion.div
-        variants={textAnimation}
-        initial="hiddenTop"
-        whileInView="visible"
-        className={s.preloader_logo}
-      >
-        <Image src="/generalLogo.png" width={200} height={55} alt="generalLogo" />
-      </motion.div>
-      <motion.div
-        variants={textAnimation}
-        initial="hiddenTop"
-        whileInView="visible"
-        className={s.preloader_left_cloud}
-      >
-        <Image src="/leftCloud.png" width={370} height={290} alt="leftCloud" />
-      </motion.div>
-      <motion.div
-        variants={textAnimation}
-        initial="hiddenBottom"
-        whileInView="visible"
-        className={s.preloader_right_cloud}
-      >
-        <Image src="/rightCloud.png" width={370} height={290} alt="leftCloud" />
-      </motion.div>
-    </div>
-  ) : null;
+  return (
+    <AnimatePresence>
+      {loading && (
+        <motion.div
+          key="preloader"
+          className={s.preloader}
+          initial={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className={s.preloader_loader}></div>
+          <motion.div
+            variants={textAnimation}
+            initial="hiddenTop"
+            whileInView="visible"
+            className={s.preloader_logo}
+          >
+            <Image
+              src="/generalLogo.png"
+              width={200}
+              height={50}
+              alt="generalLogo"
+            />
+          </motion.div>
+          <motion.div
+            variants={textAnimation}
+            initial="hiddenTop"
+            whileInView="visible"
+            className={s.preloader_left_cloud}
+          >
+            <Image
+              src="/leftCloud.png"
+              width={370}
+              height={290}
+              alt="leftCloud"
+            />
+          </motion.div>
+          <motion.div
+            variants={textAnimation}
+            initial="hiddenBottom"
+            whileInView="visible"
+            className={s.preloader_right_cloud}
+          >
+            <Image
+              src="/rightCloud.png"
+              width={370}
+              height={290}
+              alt="leftCloud"
+            />
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
 };
 
 export default Preloader;
