@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./Azer.module.scss";
-import {  azers } from "@/constans/azer";
 import { motion } from "framer-motion";
 
 
