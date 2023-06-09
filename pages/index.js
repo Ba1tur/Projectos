@@ -1,3 +1,13 @@
+import Head from 'next/head'
+import Image from 'next/image'
+import { Inter, Praise } from 'next/font/google'
+import styles from '@/styles/Home.module.css'
+import Questions from '@/components/ Questions/ Questions'
+import Answers from '@/components/Answers/Answers'
+import Description from '@/components/Description/Description'
+import Prices from '@/components/Prices/Prices'
+import Azer from '@/components/Azer/Azer'
+import Hero from '@/components/Hero/Hero'
 import Head from "next/head";
 import Image from "next/image";
 import { Inter, Praise } from "next/font/google";
@@ -32,6 +42,12 @@ export default function Home() {
       <Description />
       <CourseworkOther />
       <Azer />
+      <Hero/>
+      {/* <Questions/>
+      <Answers/>
+      <Description/>
+      <Prices/>
+      {<Azer/>} */}
     </>
   );
 }
