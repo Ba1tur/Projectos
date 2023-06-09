@@ -26,7 +26,7 @@ const Preloader = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
     }, 2500);
 
     return () => {
@@ -36,7 +36,7 @@ const Preloader = () => {
 
   useEffect(() => {
     if (loading) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     }
   }, [loading]);
 
@@ -49,7 +49,7 @@ const Preloader = () => {
         whileInView="visible"
         className={s.preloader_logo}
       >
-        <Image src="/generalLogo.png" width={171} height={42} alt="generalLogo" />
+        <Image src="/generalLogo.png" width={200} height={55} alt="generalLogo" />
       </motion.div>
       <motion.div
         variants={textAnimation}
