@@ -7,6 +7,7 @@ import Answers from '@/components/Answers/Answers'
 import Description from '@/components/Description/Description'
 import Prices from '@/components/Prices/Prices'
 import Azer from '@/components/Azer/Azer'
+import Hero from '@/components/Hero/Hero'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -20,11 +21,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Questions/>
+      <Hero/>
+      {/* <Questions/>
       <Answers/>
       <Description/>
       <Prices/>
-      {<Azer/>}
+      {<Azer/>} */}
     </>
   )
 }
