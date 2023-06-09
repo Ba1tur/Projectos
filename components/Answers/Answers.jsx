@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./Answers.module.scss";
-import { answers } from "@/constans/answers";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
