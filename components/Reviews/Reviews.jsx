@@ -9,19 +9,19 @@ import { reviews } from "@/constans/Reviews";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const textAnimation = {
-  hidden: {
-    y: 40,
-    opacity: 0,
-  },
-  visible: (custom) => ({
-    y: 10,
-    opacity: 1,
-    transition: { delay: custom * 1000 },
-  }),
-};
-
 const Reviews = () => {
+  const textAnimation = {
+    hidden: {
+      y: 40,
+      opacity: 0,
+    },
+    visible: (custom) => ({
+      y: 10,
+      opacity: 1,
+      transition: { delay: custom * 1000 },
+    }),
+  };
+  
   return (
     <div className="container">
       <div className={s.reviews}>
