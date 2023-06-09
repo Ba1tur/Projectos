@@ -106,6 +106,17 @@
     }
 }
 
+@media (max-width: 1900px) {
+    .course_work_other {
+        margin: 100px 0;
+    }
+}
+@media (max-width: 1340px) {
+    .course_work_other {
+        margin: 75px 0;
+    }
+}
+
 @media (max-width: 768px) {
     .course_work_other {
         .course_work_other_title {

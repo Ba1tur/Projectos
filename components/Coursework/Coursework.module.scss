@@ -185,6 +185,7 @@
 
         .course_right_cloud {
             position: absolute;
+            overflow: 'hidden';
             right: 0;
             top: 150px;
             bottom: 0;
@@ -209,6 +210,17 @@
             color: #e7e7e7;
             transition: .3s;
         }
+    }
+}
+        
+@media (max-width: 1900px) {
+    .course_work {
+        height: 70vh;
+    }
+}
+@media (max-width: 1580px) {
+    .course_work {
+        height: 100vh;
     }
 }
 

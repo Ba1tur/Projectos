@@ -7,6 +7,19 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 import { reviews } from "@/constans/Reviews";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const textAnimation = {
+  hidden: {
+    y: 40,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 10,
+    opacity: 1,
+    transition: { delay: custom * 1000 },
+  }),
+};
 
 const Reviews = () => {
   return (
@@ -20,9 +33,24 @@ const Reviews = () => {
             alt="rewievsBackground"
           />
         </div>
-        <div className={s.rewievs_title}>
-          <h4>Видео-отзывы</h4>
-        </div>
+        <motion.div
+          layout
+          transition={{
+            opacity: 0,
+            layout: { duration: 0.8 },
+            duration: 0.8,
+          }}
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0.5 },
+            visible: { scale: 1 },
+          }}
+        >
+          <div className={s.rewievs_title}>
+            <h4>Видео-отзывы</h4>
+          </div>
+        </motion.div>
         <div className={s.reviews_background_elements}>
           <div className={s.background_left_element}>
             <Image src="/dots.png" width={250} height={250} alt="dots" />
@@ -36,7 +64,7 @@ const Reviews = () => {
             style={{
               "--swiper-pagination-color": "#93A1C8",
             }}
-            speed={100}
+            speed={1300}
             slidesPerView={3}
             loop
             pagination={{
@@ -117,33 +145,64 @@ const Reviews = () => {
             {" "}
             {reviews.map((item) => (
               <SwiperSlide>
-                <div key={item.id} className={s.reviews_video}>
-                  <Image
-                    src={item.generalImg}
-                    width={300}
-                    height={300}
-                    alt="video"
-                  />
-                  <div className={s.reviews_pause_video}>
+                <motion.div
+                  initial="hidden"
+                  transition={{ duration: 1 }}
+                  whileInView="visible"
+                  variants={{
+                    hidden: { scale: 0.7 },
+                    visible: { scale: 1 },
+                  }}
+                >
+                  <div key={item.id} className={s.reviews_video}>
                     <Image
-                      src={item.pauseImg}
-                      width={40}
-                      height={40}
-                      alt="pauseBtn"
+                      src={item.generalImg}
+                      width={300}
+                      height={300}
+                      alt="video"
                     />
-                    <p>{item.title}</p>
+                    <div className={s.reviews_pause_video}>
+                      <Image
+                        src={item.pauseImg}
+                        width={40}
+                        height={40}
+                        alt="pauseBtn"
+                      />
+                      <p>{item.title}</p>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div className={s.reviews_second_title}>
-          <h3>Оставь заявку и выбери лучшего автора на основании отзывов</h3>
-        </div>
-        <div className={s.reviews_btn}>
-          <button>Разместить заказ</button>
-        </div>
+        <motion.div
+          layout
+          transition={{
+            opacity: 0,
+            layout: { duration: 0.8 },
+            duration: 0.8,
+          }}
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0.5 },
+            visible: { scale: 1 },
+          }}
+        >
+          <div className={s.reviews_second_title}>
+            <h3 variants={textAnimation}>
+              Оставь заявку и выбери лучшего автора на основании отзывов
+            </h3>
+          </div>
+        </motion.div>
+        <motion.div initial="hidden" whileInView="visible">
+          <div className={s.reviews_btn}>
+            <motion.button variants={textAnimation}>
+              Разместить заказ
+            </motion.button>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

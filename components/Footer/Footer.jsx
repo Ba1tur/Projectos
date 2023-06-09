@@ -25,7 +25,7 @@ const Footer = () => {
               <button>
                 <Image
                   src="/appStore.png"
-                  width={130}
+                  width={125}
                   height={50}
                   alt="appStore"
                 />
@@ -33,7 +33,7 @@ const Footer = () => {
               <button>
                 <Image
                   src="/googlePlay.png"
-                  width={130}
+                  width={125}
                   height={50}
                   alt="googlePlay"
                 />

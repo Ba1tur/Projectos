@@ -6,17 +6,45 @@ import "swiper/css/pagination";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import { coursework } from "../../constans/Coursework";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Coursework = () => {
+  const textAnimation = {
+    hidden: {
+      y: 50,
+      opacity: 0,
+    },
+    visible: (custom) => ({
+      y: 0,
+      opacity: 1,
+      transition: { delay: custom * 1000 },
+    }),
+  };
+
   return (
     <div className="container">
       <div className={s.course_work}>
-        <div className={s.course_work_title}>
-          <h4>
-            Последние выполненые <span>курсовые работы</span> по{" "}
-            <span>праву и юриспреденции</span>
-          </h4>
-        </div>
+        <motion.div
+          layout
+          transition={{
+            opacity: 0,
+            layout: { duration: 0.8 },
+            duration: 0.8,
+          }}
+          initial="hidden"
+          whileInView="visible"
+          variants={{
+            hidden: { scale: 0.5 },
+            visible: { scale: 1 },
+          }}
+        >
+          <div className={s.course_work_title}>
+            <h4 variants={textAnimation}>
+              Последние выполненые <span>курсовые работы</span> по{" "}
+              <span>праву и юриспреденции</span>
+            </h4>
+          </div>
+        </motion.div>
         <div className={s.course_work_cards}>
           <Swiper
             style={{
@@ -24,7 +52,7 @@ const Coursework = () => {
             }}
             grabCursor
             loop
-            speed={100}
+            speed={1500}
             slidesPerView={3}
             navigation={true}
             pagination={{
@@ -87,66 +115,77 @@ const Coursework = () => {
             {" "}
             {coursework.map((item) => (
               <SwiperSlide>
-                <div key={coursework.id} className={s.course_work_card}>
-                  <div className={s.course_card_titles}>
-                    <p>Сегодня, 17:45</p>
-                    <h3>
-                      Управление персоналом в условиях неподчинения сотрудников
-                    </h3>
-                    <p>Дипломная работа, Управление персоналом, 15 страниц</p>
-                  </div>
-                  <div className={s.card_general_info}>
-                    <div className={s.card_general_conditions}>
-                      <div className={s.card_unique}>
-                        <div>
-                          <Image
-                            src="/shield.png"
-                            width={30}
-                            height={35}
-                            alt="shield"
-                          />
+                <motion.div
+                  initial="hidden"
+                  transition={{ duration: 1 }}
+                  whileInView="visible"
+                  variants={{
+                    hidden: { scale: 0.7 },
+                    visible: { scale: 1 },
+                  }}
+                >
+                  <div key={coursework.id} className={s.course_work_card}>
+                    <div className={s.course_card_titles}>
+                      <p>Сегодня, 17:45</p>
+                      <h3>
+                        Управление персоналом в условиях неподчинения
+                        сотрудников
+                      </h3>
+                      <p>Дипломная работа, Управление персоналом, 15 страниц</p>
+                    </div>
+                    <div className={s.card_general_info}>
+                      <div className={s.card_general_conditions}>
+                        <div className={s.card_unique}>
+                          <div>
+                            <Image
+                              src="/shield.png"
+                              width={30}
+                              height={35}
+                              alt="shield"
+                            />
+                          </div>
+                          <div>
+                            <p>Уникальность</p>
+                            <p>97%</p>
+                          </div>
                         </div>
-                        <div>
-                          <p>Уникальность</p>
-                          <p>97%</p>
+                        <div className={s.card_calendar}>
+                          <div>
+                            <Image
+                              src="/calendar.png"
+                              width={33}
+                              height={35}
+                              alt="Calendar"
+                            />
+                          </div>
+                          <div>
+                            <p>Срок выполнения</p>
+                            <p>3 дня</p>
+                          </div>
                         </div>
                       </div>
-                      <div className={s.card_calendar}>
-                        <div>
-                          <Image
-                            src="/calendar.png"
-                            width={33}
-                            height={35}
-                            alt="Calendar"
-                          />
+                      <div className={s.card_author_price}>
+                        <div className={s.card_author_name}>
+                          <div>
+                            <Image
+                              src={item.img}
+                              width={30}
+                              height={30}
+                              alt="author"
+                            />
+                          </div>
+                          <div>
+                            <p>Эксперт</p>
+                            <p>{item.name}</p>
+                          </div>
                         </div>
-                        <div>
-                          <p>Срок выполнения</p>
-                          <p>3 дня</p>
+                        <div className={s.card_price}>
+                          <h4>{item.price} ₽</h4>
                         </div>
                       </div>
                     </div>
-                    <div className={s.card_author_price}>
-                      <div className={s.card_author_name}>
-                        <div>
-                          <Image
-                            src={item.img}
-                            width={30}
-                            height={30}
-                            alt="author"
-                          />
-                        </div>
-                        <div>
-                          <p>Эксперт</p>
-                          <p>{item.name}</p>
-                        </div>
-                      </div>
-                      <div className={s.card_price}>
-                        <h4>{item.price} ₽</h4>
-                      </div>
-                    </div>
                   </div>
-                </div>
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -169,9 +208,13 @@ const Coursework = () => {
             />
           </div>
         </div>
-        <div className={s.course_work_btn}>
-          <button>Узнать стоимость своей работы</button>
-        </div>
+        <motion.div initial="hidden" whileInView="visible">
+          <div className={s.course_work_btn}>
+            <motion.button variants={textAnimation}>
+              Узнать стоимость своей работы
+            </motion.button>
+          </div>
+        </motion.div>
       </div>
     </div>
   );
