@@ -3,9 +3,11 @@ import { useEffect, useState } from "react";
 import s from "./Preoader.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Work from "../Work/Work";
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
+  const [mainPageLoaded, setMainPageLoaded] = useState(false);
 
   const textAnimation = {
     hiddenTop: {
@@ -19,7 +21,7 @@ const Preloader = () => {
     visible: (custom) => ({
       y: 0,
       opacity: 1,
-      transition: { delay: custom * 1000 },
+      transition: { delay: custom * 1 },
     }),
   };
 
@@ -37,12 +39,14 @@ const Preloader = () => {
   useEffect(() => {
     if (loading) {
       document.body.style.overflow = "hidden";
+    } else {
+      setMainPageLoaded(true);
     }
   }, [loading]);
 
   return (
     <AnimatePresence>
-      {loading && (
+      {loading ? (
         <motion.div
           key="preloader"
           className={s.preloader}
@@ -54,7 +58,7 @@ const Preloader = () => {
           <motion.div
             variants={textAnimation}
             initial="hiddenTop"
-            whileInView="visible"
+            animate={mainPageLoaded ? "hiddenTop" : "visible"}
             className={s.preloader_logo}
           >
             <Image
@@ -67,7 +71,7 @@ const Preloader = () => {
           <motion.div
             variants={textAnimation}
             initial="hiddenTop"
-            whileInView="visible"
+            animate={mainPageLoaded ? "hiddenTop" : "visible"}
             className={s.preloader_left_cloud}
           >
             <Image
@@ -80,7 +84,7 @@ const Preloader = () => {
           <motion.div
             variants={textAnimation}
             initial="hiddenBottom"
-            whileInView="visible"
+            animate={mainPageLoaded ? "hiddenBottom" : "visible"}
             className={s.preloader_right_cloud}
           >
             <Image
@@ -91,7 +95,8 @@ const Preloader = () => {
             />
           </motion.div>
         </motion.div>
-      )}
+      ) : null}
+      {!loading && <Work/>}
     </AnimatePresence>
   );
 };
