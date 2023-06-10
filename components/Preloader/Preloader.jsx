@@ -11,11 +11,11 @@ const Preloader = () => {
 
   const textAnimation = {
     hiddenTop: {
-      y: -200,
+      y: -1000,
       opacity: 0,
     },
     hiddenBottom: {
-      y: 200,
+      y: 1000,
       opacity: 0,
     },
     visible: (custom) => ({
@@ -76,8 +76,8 @@ const Preloader = () => {
           >
             <Image
               src="/leftCloud.png"
-              width={370}
-              height={290}
+              width={300}
+              height={200}
               alt="leftCloud"
             />
           </motion.div>
@@ -89,8 +89,8 @@ const Preloader = () => {
           >
             <Image
               src="/rightCloud.png"
-              width={370}
-              height={290}
+              width={300}
+              height={170}
               alt="leftCloud"
             />
           </motion.div>
