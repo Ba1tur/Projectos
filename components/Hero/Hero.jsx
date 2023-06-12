@@ -1,44 +1,55 @@
 import React from "react";
 import s from "./Hero.module.scss";
 import Image from "next/image";
+import { motion } from "framer-motion";
 const Hero = () => {
+  const textAnimation = {
+    hidden: {
+      x: -100,
+      opacity: 0,
+    },
+    visible: (custom) => ({
+      x: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.1 },
+    }),
+  };
   return (
-    <div className="container">
-      <div className={s.hero}>
+    <motion.div initial="hidden" whileInView="visible" className="container">
+      <div  className={s.hero}>
         <div className={s.hero_background}>
           <Image src="/Hero-oval.png" alt="oval" width={1600} height={1000} />
         </div>
-        <div className={s.logo}>
-          <div>
+        <motion.div variants={textAnimation} className={s.logo}>
+          <motion.div variants={textAnimation} custom={1} className={s.logo_logotip}>
             <p>
               <Image src="/hero-logo.png" alt="logo" width={120} height={30} />
             </p>
-            <p>— помогаем учиться</p>
+            <motion.p variants={textAnimation} custom={2}>— помогаем учиться</motion.p>
+          </motion.div>
+          <div className={s.logo_btn}>
+            <motion.button variants={textAnimation} custom={3}>Регистрация</motion.button>
+            <motion.button variants={textAnimation} custom={4}>Войти</motion.button>
           </div>
-
-          <div>
-            <button>Регистрация</button>
-            <button>Войти</button>
-          </div>
-        </div>
-        <div className={s.hero_info}>
-          <div className={s.hero_info__img}>
+        </motion.div>
+        <motion.div variants={textAnimation} custom={5} className={s.hero_info}>
+          <motion.div variants={textAnimation} custom={6} className={s.hero_info__img}>
             <Image
               src="/hero-girl.png"
               alt="girl"
               width={500}
               height={500}
             ></Image>
-          </div>
+          </motion.div>
           <div className={s.hero_info__des}>
-            <h2>
+            <motion.h2 variants={textAnimation} custom={7}>
               Заказать <span>курсовую работу</span>{" "}
-            </h2>
-            <p>
+            </motion.h2>
+            <motion.p variants={textAnimation} custom={8} className={s.hero_info__des_text}>
               У нас можно заказать курсовую работу напрямую у любого
               исполнителя. Все они – преподаватели и эксперты в своем предмете.
-            </p>
-            <div>
+            </motion.p>
+            <motion.div variants={textAnimation} custom={9} className={s.hero_info__des_set}>
               <p>
                 <svg
                   width="48"
@@ -91,33 +102,38 @@ const Hero = () => {
                 </svg>
                 72 000 преподавателей и экспертов
               </p>
-            </div>
+            </motion.div>
           </div>
-        </div>
-        <div className={s.hero_form}>
-          <div className={s.hero_form__inputs}>
-            <div className={s.hero_form__inp}>
+        </motion.div>
+
+        <motion.div variants={textAnimation} custom={10} className={s.hero_form}>
+          <motion.div variants={textAnimation} custom={11} className={s.hero_form__inputs}>
+            <motion.div variants={textAnimation} custom={12} className={s.hero_form__inp}>
               <button>тема работы</button>
               <input type="text" placeholder="Введи тему работы сюда" />
-            </div>
-            <div className={s.hero_form__inp}>
+            </motion.div>
+            <motion.div variants={textAnimation} custom={13} className={s.hero_form__inp}>
               <button>твой email</button>
               <input type="text" placeholder="example@mail.com" />
-            </div>
-            <button>% у меня есть промокод</button>
-          </div>
+            </motion.div>
+            <motion.button variants={textAnimation} custom={14}>% у меня есть промокод</motion.button>
+          </motion.div>
           <div className={s.hero_form_description}>
-            <div className={s.hero_form__inps}>
+            <motion.div variants={textAnimation} custom={15} className={s.hero_form__inps}>
               <input type="checkbox" />
-             <p> Согласен с условиями политики конфиденциальности и пользовательского соглашения.</p>
-            </div>
-            <div className={s.hero_form__btn}>
+              <p>
+                {" "}
+                Согласен с условиями политики конфиденциальности и
+                пользовательского соглашения.
+              </p>
+            </motion.div>
+            <motion.div variants={textAnimation} custom={16} className={s.hero_form__btn}>
               <button>Узнать стоимость</button>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

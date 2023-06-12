@@ -22,11 +22,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero/>
-      {/* <Questions/>
+      <Questions/>
       <Answers/>
       <Description/>
       <Prices/>
-      {<Azer/>} */}
+      {<Azer/>}
     </>
   )
 }
