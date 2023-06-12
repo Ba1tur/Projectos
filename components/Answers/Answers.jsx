@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Answers.module.scss";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { answers } from "@/constans/Answers";
 
 const Answers = () => {
   const textAnimation = {
