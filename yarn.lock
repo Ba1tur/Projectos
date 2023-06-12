@@ -365,7 +365,7 @@ fill-range@^7.0.1:
 
 framer-motion@^10.12.16:
   version "10.12.16"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-10.12.16.tgz#ccba11d216ac370c6bc65fcd9953a61deb54f071"
+  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-10.12.16.tgz"
   integrity sha512-w/SfWEIWJkYSgRHYBmln7EhcNo31ao8Xexol8lGXf1pR/tlnBtf1HcxoUmEiEh6pacB4/geku5ami53AAQWHMQ==
   dependencies:
     tslib "^2.4.0"
@@ -865,9 +865,14 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-intersection-observer@^9.4.4:
+  version "9.4.4"
+  resolved "https://registry.npmjs.org/react-intersection-observer/-/react-intersection-observer-9.4.4.tgz"
+  integrity sha512-KQr8ezJscRSQZR0/TjogG4mZttCzdPZj8fhDzAK+xrPYOVvFjabRNy+4EY3UhS3fJaJyIedGjA8y4yKX+nc08w==
+
 react-is@^16.12.0:
   version "16.13.1"
-  resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react@18.2.0:

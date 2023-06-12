@@ -133,7 +133,10 @@
 
 @media (max-width: 1900px) {
     .reviews {
-        height: 80vh;
+        height: 75vh;
+        .reviews_background {
+            height: 90%;
+        }
         .rewievs_title {
             padding: 50px 0 0 0;
         }
@@ -143,6 +146,9 @@
 @media (max-width: 1340px) {
     .reviews {
         height: 100vh;
+        .reviews_background {
+            height: 100%;
+        }
     }
 }
 

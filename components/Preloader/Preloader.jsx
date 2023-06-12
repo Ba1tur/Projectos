@@ -3,23 +3,25 @@ import { useEffect, useState } from "react";
 import s from "./Preoader.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import Hero from "../Hero/Hero";
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
+  const [mainPageLoaded, setMainPageLoaded] = useState(false);
 
   const textAnimation = {
     hiddenTop: {
-      y: -200,
+      y: -1000,
       opacity: 0,
     },
     hiddenBottom: {
-      y: 200,
+      y: 1000,
       opacity: 0,
     },
     visible: (custom) => ({
       y: 0,
       opacity: 1,
-      transition: { delay: custom * 1000 },
+      transition: { delay: custom * 1 },
     }),
   };
 
@@ -37,12 +39,14 @@ const Preloader = () => {
   useEffect(() => {
     if (loading) {
       document.body.style.overflow = "hidden";
+    } else {
+      setMainPageLoaded(true);
     }
   }, [loading]);
 
   return (
     <AnimatePresence>
-      {loading && (
+      {loading ? (
         <motion.div
           key="preloader"
           className={s.preloader}
@@ -54,7 +58,7 @@ const Preloader = () => {
           <motion.div
             variants={textAnimation}
             initial="hiddenTop"
-            whileInView="visible"
+            animate={mainPageLoaded ? "hiddenTop" : "visible"}
             className={s.preloader_logo}
           >
             <Image
@@ -67,31 +71,32 @@ const Preloader = () => {
           <motion.div
             variants={textAnimation}
             initial="hiddenTop"
-            whileInView="visible"
+            animate={mainPageLoaded ? "hiddenTop" : "visible"}
             className={s.preloader_left_cloud}
           >
             <Image
               src="/leftCloud.png"
-              width={370}
-              height={290}
+              width={300}
+              height={200}
               alt="leftCloud"
             />
           </motion.div>
           <motion.div
             variants={textAnimation}
             initial="hiddenBottom"
-            whileInView="visible"
+            animate={mainPageLoaded ? "hiddenBottom" : "visible"}
             className={s.preloader_right_cloud}
           >
             <Image
               src="/rightCloud.png"
-              width={370}
-              height={290}
+              width={300}
+              height={170}
               alt="leftCloud"
             />
           </motion.div>
         </motion.div>
-      )}
+      ) : null}
+      {!loading && <Hero/>}
     </AnimatePresence>
   );
 };
