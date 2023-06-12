@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-.reviews {
-  z-index: 1;
-  background-color: #7D2AEB;
-}
-
 h1, h2, h3, h4, h5, h6, p, ol, ul, a {
   font-size: 16px;
   font-weight: normal;
