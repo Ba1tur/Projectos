@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import s from "./Preoader.module.scss";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import Work from "../Work/Work";
+import Hero from "../Hero/Hero";
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
@@ -96,7 +96,7 @@ const Preloader = () => {
           </motion.div>
         </motion.div>
       ) : null}
-      {!loading && <Work/>}
+      {!loading && <Hero/>}
     </AnimatePresence>
   );
 };
